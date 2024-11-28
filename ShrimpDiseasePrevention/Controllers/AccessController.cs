@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShrimpDiseasePrevention.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
 namespace ShrimpDiseasePrevention.Controllers
 {
@@ -25,6 +26,7 @@ namespace ShrimpDiseasePrevention.Controllers
         {
             if (!ModelState.IsValid)
             {
+                ViewBag.NotificationForRegister = "ModelInvalid";
                 return View(_user);
             }
 
@@ -33,6 +35,18 @@ namespace ShrimpDiseasePrevention.Controllers
                 if (await _context.Users.AnyAsync(u => u.UserName == _user.UserName))
                 {
                     ViewBag.NotificationForRegister = "Already";
+                    return View(_user);
+                }
+
+                if (_user.UserName.Length < 6)
+                {
+                    ViewBag.NotificationForRegister = "Username too short";
+                    return View(_user);
+                }
+
+                if (_user.UserPassword.Length < 6)
+                {
+                    ViewBag.NotificationForRegister = "Userpassword too short";
                     return View(_user);
                 }
 
@@ -53,10 +67,11 @@ namespace ShrimpDiseasePrevention.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, "Lỗi xử lý yêu cầu");
+                ModelState.AddModelError(string.Empty, "Lỗi xử lý yêu cầu. Vui lòng thử lại sau.");
                 return View(_user);
             }
         }
+
 
         public IActionResult Login()
         {
@@ -70,7 +85,7 @@ namespace ShrimpDiseasePrevention.Controllers
             {
                 if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(userPassword))
                 {
-                    ViewBag.NotificationForLogin = "Both username and password are required.";
+                    ViewBag.NotificationForLogin = "NULL";
                     return View();
                 }
 
@@ -87,7 +102,7 @@ namespace ShrimpDiseasePrevention.Controllers
                     return RedirectToAction("Index", "Home");
                 }
 
-                ViewBag.NotificationForLogin = "Invalid username or password.";
+                ViewBag.NotificationForLogin = "Invalid";
                 return View();
             }
             catch (Exception ex)

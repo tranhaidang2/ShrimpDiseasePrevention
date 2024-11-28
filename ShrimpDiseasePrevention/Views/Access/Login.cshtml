@@ -15,21 +15,17 @@
 </head>
 <body>
     <div class="floating-form-container">
-        <h3>Đăng nhập</h3>
+        <h3>Chào mừng trở lại</h3>
 
-        <form id="loginForm" asp-action="Login" class="needs-validation" novalidate method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
-
+        <form id="loginForm" asp-action="Login" method="post" class="needs-validation">
             <div class="form-floating mb-3">
                 <input asp-for="UserName" class="form-control" id="UserName" placeholder="Tên đăng nhập" required />
                 <label asp-for="UserName">Tên đăng nhập</label>
             </div>
-
             <div class="form-floating mb-4">
                 <input asp-for="UserPassword" class="form-control" type="password" id="UserPassword" placeholder="Mật khẩu" required />
                 <label asp-for="UserPassword">Mật khẩu</label>
             </div>
-
             <div class="d-grid">
                 <button type="submit" class="btn btn-primary btn-lg">Đăng nhập</button>
             </div>
@@ -40,49 +36,36 @@
     </div>
     <partial name="_ValidationScriptsPartial" />
 
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    @if (ViewBag.NotificationForLogin == "Fail")
+    @if (ViewBag.NotificationForLogin == "Invalid")
     {
         <script>
-            alert('Tên đăng nhập hoặc mật khẩu không đúng');
+            const userNameInput = document.getElementById("UserName");
+            alert('Sai tên đăng nhập hoặc mật khẩu');
+            userNameInput.focus();
         </script>
     }
     <script>
-                document.getElementById("loginForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            let isValid = true;
-            let errorMessage = "";
-
+               document.addEventListener("DOMContentLoaded", function () {
             const userNameInput = document.getElementById("UserName");
             const userPasswordInput = document.getElementById("UserPassword");
 
-            const userName = userNameInput.value;
-            if (userName.length == 0 || userName == "") {
-                isValid = false;
-                errorMessage = "Nhập tên đăng nhập";
-                userNameInput.focus();
-            }
+            userNameInput.oninvalid = function () {
+                this.setCustomValidity("Vui lòng nhập tên đăng nhập");
+            };
+            userNameInput.oninput = function () {
+                this.setCustomValidity("");
+            };
 
-            const userPassword = userPasswordInput.value;
-            if (isValid && (userPassword.length == 0 || userPassword == "")) {
-                isValid = false;
-                errorMessage = "Nhập mật khẩu";
-                userPasswordInput.focus();
-            }
-
-            if (!isValid) {
-                alert(errorMessage);
-            } else {
-                this.submit();
-            }
+            userPasswordInput.oninvalid = function () {
+                this.setCustomValidity("Vui lòng nhập mật khẩu");
+            };
+            userPasswordInput.oninput = function () {
+                this.setCustomValidity("");
+            };
         });
 
-        window.onload = function() {
-            document.getElementById("loginForm").reset();
-        };
-
     </script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

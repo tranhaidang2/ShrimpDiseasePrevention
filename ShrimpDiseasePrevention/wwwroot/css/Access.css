@@ -2,6 +2,7 @@
 
 :root {
     --background-color: #ffffff;
+    --new-background-color: #e1f5fe;
     --default-color: #3d4348;
     --heading-color: #3e5055;
     --accent-color: #388da8;
@@ -18,7 +19,7 @@
 }
 
 body {
-    background: var(--background-color);
+    background: var(--new-background-color);
     display: flex;
     justify-content: center;
     align-items: center;

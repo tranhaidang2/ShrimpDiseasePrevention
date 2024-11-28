@@ -16,7 +16,7 @@
 <body>
     <div class="floating-form-container">
         <h3>Đăng ký</h3>
-        <form id="registrationForm" asp-action="Register" class="needs-validation" novalidate>
+        <form id="registrationForm" asp-action="Register" method="post" class="needs-validation">
             <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
             <div class="form-floating mb-3">
@@ -51,6 +51,25 @@
             userNameInput.focus();
         </script>
     }
+
+    @if (ViewBag.NotificationForRegister == "Username too short")
+    {
+        <script>
+            const userNameInput = document.getElementById("UserName");
+            alert('Tài khoản không được được dưới 6 ký tự!');
+            userNameInput.focus();
+        </script>
+    }
+
+    @if (ViewBag.NotificationForRegister == "Userpassword too short")
+    {
+        <script>
+            const userPasswordInput = document.getElementById("UserPassword");
+            alert('Mật khẩu không được được dưới 6 ký tự!');
+            userPasswordInput.focus();
+        </script>
+    }
+
     @if (ViewBag.NotificationForRegister == "Success")
     {
         <script>
@@ -60,55 +79,39 @@
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-                 document.getElementById("registrationForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            let isValid = true;
-            let errorMessage = "";
-
+                   document.addEventListener("DOMContentLoaded", function () {
             const userNameInput = document.getElementById("UserName");
             const userPasswordInput = document.getElementById("UserPassword");
             const userFullNameInput = document.getElementById("UserFullName");
 
-            const userName = userNameInput.value;
-            if (userName.length == 0 || userName === "") {
-                isValid = false;
-                errorMessage = "Tên đăng nhập không được để trống";
-                userNameInput.focus();
-            } else if (userName.length <= 6 || !/^[a-zA-Z0-9]+$/.test(userName)) {
-                isValid = false;
-                errorMessage = "Tên đăng nhập phải có ít nhất 6 ký tự và không chứa ký tự đặc biệt.";
-                userNameInput.focus();
-            }
+            userNameInput.oninvalid = function () {
+                if (this.validity.valueMissing) {
+                    this.setCustomValidity("Vui lòng nhập tên đăng nhập.");
+                }
+            };
+            userNameInput.oninput = function () {
+                this.setCustomValidity("");
+            };
 
-            const userPassword = userPasswordInput.value;
-            if (isValid && (userPassword.length == 0 || userPassword === "")) {
-                isValid = false;
-                errorMessage = "Mật khẩu không được để trống";
-                userPasswordInput.focus();u
-            } else if (isValid && (userPassword.length <= 6 || !/^[a-zA-Z0-9]+$/.test(userPassword))) {
-                isValid = false;
-                errorMessage = "Mật khẩu phải có ít nhất 6 ký tự và không chứa ký tự đặc biệt.";
-                userPasswordInput.focus();
-            }
+            userPasswordInput.oninvalid = function () {
+                if (this.validity.valueMissing) {
+                    this.setCustomValidity("Vui lòng nhập mật khẩu.");
+                }
+            };
+            userPasswordInput.oninput = function () {
+                this.setCustomValidity("");
+            };
 
-            const userFullName = userFullNameInput.value;
-            if (isValid && userFullName.trim() === "") {
-                isValid = false;
-                errorMessage = "Họ và tên không được để trống";
-                userFullNameInput.focus();
-            } else if (isValid && userFullName.length > 30) {
-                isValid = false;
-                errorMessage = "Họ và tên không được quá 30 ký tự";
-                userFullNameInput.focus();
-            }
-
-            if (!isValid) {
-                alert(errorMessage);
-                return;
-            }
-            this.submit();
+            userFullNameInput.oninvalid = function () {
+                if (this.validity.valueMissing) {
+                    this.setCustomValidity("Vui lòng nhập họ và tên.");
+                }
+            };
+            userFullNameInput.oninput = function () {
+                this.setCustomValidity("");
+            };
         });
+
     </script>
 </body>
 </html>

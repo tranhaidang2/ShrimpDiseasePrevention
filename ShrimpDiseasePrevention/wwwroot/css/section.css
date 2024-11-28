@@ -274,7 +274,7 @@
 }
 
 .section-bg {
-    background: var(--new-contrast-color) !important;
+    background: var(--new-background-color) !important;
 }
 
 .services-2 .services-carousel-wrap {

@@ -16,7 +16,7 @@ public partial class User
     public string UserPassword { get; set; } = null!;
 
     [Required]
-    public string UserFullName { get; set; } = null!;
+    public string? UserFullName { get; set; } = null!;
 
     public DateTime? UserCreateAt { get; set; }
 
