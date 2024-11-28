@@ -1,0 +1,48 @@
+﻿
+.about .section-title {
+    margin-bottom: 60px;
+}
+
+.about .content {
+    background: var(--new-contrast-color);
+    color: var(--new-dark-contract-font);
+    padding: 7rem 0;
+}
+
+    .about .content .img-overlap {
+        margin-top: 0;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.img-overlap {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.about p {
+    color: var(--new-dark-contract-font);
+}
+
+.about .content-title {
+    color: var(--new-dark-contract-font);
+    font-weight: 300;
+    text-align: left;
+}
+
+    .about .content-title strong {
+        font-weight: 700;
+    }
+
+.about .content-subtitle {
+    font-weight: 300;
+    color: var(--new-dark-contract-font);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}

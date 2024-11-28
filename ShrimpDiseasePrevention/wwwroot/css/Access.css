@@ -1,0 +1,77 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --background-color: #ffffff;
+    --default-color: #3d4348;
+    --heading-color: #3e5055;
+    --accent-color: #388da8;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    --new-contrast-color: #D1FAE5;
+    --new-dark-contract-font: #060606;
+    --nav-color: #313336;
+    --nav-hover-color: #77b6ca;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #313336;
+    --nav-dropdown-hover-color: #77b6ca;
+}
+
+body {
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: var(--default-color);
+}
+
+.floating-form-container {
+    width: 100%;
+    max-width: 400px;
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+    .btn-primary:hover {
+        background-color: var(--nav-hover-color);
+        border-color: var(--nav-hover-color);
+    }
+
+.form-floating .form-control {
+    border: 1px solid var(--default-color);
+    border-radius: 10px;
+}
+
+    .form-floating .form-control:focus {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 5px var(--accent-color);
+    }
+
+.alert-info {
+    background-color: var(--new-contrast-color);
+    color: var(--new-dark-contract-font);
+}
+
+a {
+    color: var(--nav-hover-color);
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }

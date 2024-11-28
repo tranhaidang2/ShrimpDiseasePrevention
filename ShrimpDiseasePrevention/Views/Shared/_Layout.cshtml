@@ -1,0 +1,108 @@
+﻿@model ShrimpDiseasePrevention.Models.User
+
+@{
+    var userFullName = Context.Session.GetString("FullName");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Trang chủ</title>
+
+    <!-- Important -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/aos/aos.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/lib/glightbox/css/glightbox.css" />
+    <link rel="stylesheet" href="~/lib/swiper/swiper-bundle.min.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ShrimpGuard.styles.css" asp-append-version="true" />
+
+    <style>
+        .menu-item {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+            .menu-item:hover {
+                color: white;
+            }
+    </style>
+</head>
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="~/img/logo.png" alt="">
+                <h1 class="sitename">QuikShrimp</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index" class="active">Trang chủ</a></li>
+                    <li><a asp-controller="News" asp-action="Index">Tin tức</a></li>
+                    <li><a href="index.html#features">Tra cứu</a></li>
+                    <li><a asp-controller="Access" asp-action="Login">Diễn đàn</a></li>
+                    <li><a asp-controller="Home" asp-action="Privacy">Về chúng tôi</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Hỗ trợ</span> <i class="bi bi-caret-down-fill toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Gmail</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Zalo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            @if (!string.IsNullOrEmpty(userFullName))
+            {
+                <a class="btn-profile" asp-action="Privacy" asp-controller="Home">
+                    @userFullName
+                </a>
+            }
+            else
+            {
+                <a class="btn-profile" asp-action="Login" asp-controller="Access">
+                    Đăng nhập
+                </a>
+            }
+        </div>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container copyright text-center">
+            <p>
+                © <span>Copyright</span> <strong class="px-1 sitename">QuickStart</strong><span>
+                    All Rights
+                    Reserved
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+    <script src="~/lib/aos/aos.js"></script>
+    <script src="~/lib/glightbox/js/glightbox.js"></script>
+    <script src="~/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

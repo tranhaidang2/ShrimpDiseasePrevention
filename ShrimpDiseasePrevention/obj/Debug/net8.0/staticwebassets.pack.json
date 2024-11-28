@@ -1,0 +1,593 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ShrimpDiseasePrevention.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ShrimpDiseasePrevention.t0bqlsr4j1.bundle.scp.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\Access.css",
+      "PackagePath": "staticwebassets\\css\\Access.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\news.css",
+      "PackagePath": "staticwebassets\\css\\news.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\section.css",
+      "PackagePath": "staticwebassets\\css\\section.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\about_1.jpg",
+      "PackagePath": "staticwebassets\\img\\about_1.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\about_2.jpg",
+      "PackagePath": "staticwebassets\\img\\about_2.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\about_3.jpg",
+      "PackagePath": "staticwebassets\\img\\about_3.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\aboutpage.jpg",
+      "PackagePath": "staticwebassets\\img\\aboutpage.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_1.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel_1.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_2.webp",
+      "PackagePath": "staticwebassets\\img\\carousel_2.webp"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_3.gif",
+      "PackagePath": "staticwebassets\\img\\carousel_3.gif"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_4.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel_4.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_5.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel_5.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_6.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel_6.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_7.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel_7.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\carousel_8.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel_8.jpg"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\hero-bg-light.webp",
+      "PackagePath": "staticwebassets\\img\\hero-bg-light.webp"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\hero-services-img.webp",
+      "PackagePath": "staticwebassets\\img\\hero-services-img.webp"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\aos\\aos.cjs.js",
+      "PackagePath": "staticwebassets\\lib\\aos\\aos.cjs.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\aos\\aos.css",
+      "PackagePath": "staticwebassets\\lib\\aos\\aos.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\aos\\aos.esm.js",
+      "PackagePath": "staticwebassets\\lib\\aos\\aos.esm.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\aos\\aos.js",
+      "PackagePath": "staticwebassets\\lib\\aos\\aos.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\aos\\aos.js.map",
+      "PackagePath": "staticwebassets\\lib\\aos\\aos.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\glightbox\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\glightbox\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\glightbox\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\glightbox\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ShrimpDiseasePrevention.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ShrimpDiseasePrevention.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ShrimpDiseasePrevention.props",
+      "PackagePath": "build\\ShrimpDiseasePrevention.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ShrimpDiseasePrevention.props",
+      "PackagePath": "buildMultiTargeting\\ShrimpDiseasePrevention.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ShrimpDiseasePrevention.props",
+      "PackagePath": "buildTransitive\\ShrimpDiseasePrevention.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
