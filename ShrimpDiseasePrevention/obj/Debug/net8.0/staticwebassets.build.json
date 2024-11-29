@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XHdzGoAQ9pjbG6ku98U5doS8K21v+Ol88G0O2FdzeOg=",
+  "Hash": "bnAKH9Z09CIQthZcUXQ1Q8+Qnnto3vJzMUYz5fasK/w=",
   "Source": "ShrimpDiseasePrevention",
   "BasePath": "_content/ShrimpDiseasePrevention",
   "Mode": "Default",
@@ -3018,6 +3018,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\about.jpg",
+      "SourceId": "ShrimpDiseasePrevention",
+      "SourceType": "Discovered",
+      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
+      "BasePath": "_content/ShrimpDiseasePrevention",
+      "RelativePath": "NewImage/about#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bigvszd45u",
+      "Integrity": "Uz1C9CIrrotALL0erDUq31raXZ0NYkjWVH6N5dDgsHY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NewImage\\about.jpg"
     }
   ],
   "Endpoints": [
@@ -14580,6 +14601,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-MMXrlNBnzij7CcWxGT9wVEKkTx+8LMBE9gW0LqgnRx0="
+        }
+      ]
+    },
+    {
+      "Route": "NewImage/about.bigvszd45u.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\about.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "197635"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uz1C9CIrrotALL0erDUq31raXZ0NYkjWVH6N5dDgsHY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 29 Nov 2024 16:44:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bigvszd45u"
+        },
+        {
+          "Name": "label",
+          "Value": "NewImage/about.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uz1C9CIrrotALL0erDUq31raXZ0NYkjWVH6N5dDgsHY="
+        }
+      ]
+    },
+    {
+      "Route": "NewImage/about.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\about.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "197635"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uz1C9CIrrotALL0erDUq31raXZ0NYkjWVH6N5dDgsHY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 29 Nov 2024 16:44:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uz1C9CIrrotALL0erDUq31raXZ0NYkjWVH6N5dDgsHY="
         }
       ]
     },

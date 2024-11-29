@@ -181,6 +181,10 @@
       "PackagePath": "staticwebassets\\ShrimpDiseasePrevention.t0bqlsr4j1.bundle.scp.css"
     },
     {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\about.jpg",
+      "PackagePath": "staticwebassets\\NewImage\\about.jpg"
+    },
+    {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\Access.css",
       "PackagePath": "staticwebassets\\css\\Access.css"
     },

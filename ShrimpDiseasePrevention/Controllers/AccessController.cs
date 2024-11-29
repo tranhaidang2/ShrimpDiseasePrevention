@@ -112,7 +112,6 @@ namespace ShrimpDiseasePrevention.Controllers
             }
         }
 
-
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
