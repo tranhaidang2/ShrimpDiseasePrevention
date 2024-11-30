@@ -139,4 +139,8 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\lib\swiper\swiper-bundle.min.css
 wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
+wwwroot\NewImage\17\about.jpeg
+wwwroot\NewImage\17\about.jpg
+wwwroot\NewImage\17\about1.jpg
 wwwroot\NewImage\about.jpg
+wwwroot\NewImage\backgeound.jpg

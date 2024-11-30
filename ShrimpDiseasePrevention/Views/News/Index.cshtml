@@ -1,29 +1,112 @@
 ﻿@{
-    var newsList = ViewBag.News as List<ShrimpDiseasePrevention.Models.News>; // Casting ViewBag.News to the correct type
+    var newsList = ViewBag.News as List<ShrimpDiseasePrevention.Models.News>;
 }
 
-@if (newsList != null && newsList.Any())
-{
-    foreach (var news in newsList)
-    {
-        <div>
-            <h2>@news.NewsTitle</h2>
-            <p>@news.NewsShortDescription</p>
-            <p>@news.NewsContent</p>
-            <p>
-                @if (news.User != null)
+<link rel="stylesheet" href="~/css/news.css" />
+
+<!-- Recent Posts Section -->
+<section id="recent-posts" class="recent-posts section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Posts</h2>
+        <p>Necessitatibus eius consequatur</p>
+    </div>
+    <!-- End Section Title -->
+    <!-- Search Input -->
+    <div class="container mb-4">
+        <input type="text" id="search-input" class="form-control" placeholder="Search posts..." />
+    </div>
+    <!-- End Search Input -->
+
+    <div class="container">
+        <!-- News List Container -->
+        <div id="news-list">
+            <div class="row gy-5">
+                @foreach (var news in newsList)
                 {
-                    @news.User.UserFullName
+                    <div class="col-xl-4 col-md-6 news-item" data-title="@news.NewsTitle.ToLower()"
+                         data-content="@news.NewsContent.ToLower()">
+                        <div class="post-item position-relative h-100" data-aos="fade-up">
+
+                            <div class="post-img position-relative overflow-hidden">
+                                <img src="/NewImage/17/about.jpeg" class="img-fluid" alt="News Image">
+                                <span class="post-date">@news.NewsCreateAt.ToString()</span>
+                            </div>
+
+                            <div class="post-content d-flex flex-column">
+                                <h3 class="post-title">@news.NewsTitle</h3>
+
+                                <div class="meta d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-person"></i>
+                                        <span class="ps-2">
+                                            @if (news.User != null)
+                                            {
+                                                @news.User.UserFullName
+                                            }
+                                            else
+                                            {
+                                                <em>Author information unavailable</em>
+                                            }
+                                        </span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-folder2"></i>
+                                        <span class="ps-2">"Uncategorized"</span>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <a href="news-details/@news.NewsId" class="readmore stretched-link">
+                                    <span>Read More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
                 }
-                else
-                {
-                    <em>Author information unavailable</em>
-                }
-            </p>
+            </div>
         </div>
-    }
-}
-else
-{
-    <p>No news available.</p>
-}
+
+        <!-- No Results Found -->
+        <div id="no-results" class="text-center d-none" style="height: 80vh; display: flex; justify-content: center; align-items: center;">
+            <h4>No results found</h4>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#search-input').on('input', function () {
+            const query = $(this).val().toLowerCase();
+
+            // Flag to check if any item is visible
+            let hasResults = false;
+
+            // Loop through news items and toggle visibility based on search query
+            $('.news-item').each(function () {
+                const title = $(this).data('title');
+                const content = $(this).data('content');
+
+                if (title.includes(query) || content.includes(query)) {
+                    $(this).show();
+                    hasResults = true;
+                } else {
+                    $(this).hide();
+                }
+            });
+
+            // Show or hide "No results found" message
+            if (hasResults) {
+                $('#no-results').addClass('d-none');
+            } else {
+                $('#no-results').removeClass('d-none');
+            }
+        });
+    });
+</script>

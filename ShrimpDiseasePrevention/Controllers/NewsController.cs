@@ -59,11 +59,18 @@ namespace ShrimpDiseasePrevention.Controllers
                 _context.News.Add(news);
                 await _context.SaveChangesAsync();
 
+                // Tạo thư mục dựa trên ID bài viết
+                var newsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "NewImage", news.NewsId.ToString());
+                if (!Directory.Exists(newsDirectory))
+                {
+                    Directory.CreateDirectory(newsDirectory);
+                }
+
                 if (model.ImageFiles != null && model.ImageFiles.Any())
                 {
                     foreach (var file in model.ImageFiles)
                     {
-                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "NewImage", file.FileName);
+                        var filePath = Path.Combine(newsDirectory, file.FileName);
 
                         using (var stream = new FileStream(filePath, FileMode.Create))
                         {
@@ -73,7 +80,7 @@ namespace ShrimpDiseasePrevention.Controllers
                         var image = new Image
                         {
                             NewsId = news.NewsId,
-                            ImagePath = $"/images/{file.FileName}",
+                            ImagePath = $"/NewImage/{news.NewsId}/{file.FileName}",
                             ImageCreateAt = DateTime.Now,
                         };
 
@@ -87,6 +94,7 @@ namespace ShrimpDiseasePrevention.Controllers
             }
 
             return View(model);
+
         }
 
     }
