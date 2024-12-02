@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ebCCGIQzJkwTMFALUmZRZpQSXsWrTKVisq+GN12RSG4=",
+  "Hash": "uygkoFLUjGmC3AycuiyEiwF37mnowG5oRm6URHj8IGw=",
   "Source": "ShrimpDiseasePrevention",
   "BasePath": "_content/ShrimpDiseasePrevention",
   "Mode": "Default",
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2h8jwy9kyc",
-      "Integrity": "Wtb9mz1HJfHFTCHGEgoPrt2kF1mBVxPGOX/I/0M+g6k=",
+      "Fingerprint": "zefm4q7erk",
+      "Integrity": "dezoTVtCh1bSlxMwaQAS6Jy9qpLFygZKheEnbQdZprc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\details.css"
@@ -3081,6 +3081,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\12\\backgeound.jpg",
+      "SourceId": "ShrimpDiseasePrevention",
+      "SourceType": "Discovered",
+      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
+      "BasePath": "_content/ShrimpDiseasePrevention",
+      "RelativePath": "NewImage/12/backgeound#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xq5rh2y057",
+      "Integrity": "J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NewImage\\12\\backgeound.jpg"
     }
   ],
   "Endpoints": [
@@ -5955,51 +5976,6 @@
       ]
     },
     {
-      "Route": "css/details.2h8jwy9kyc.css",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "847"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Wtb9mz1HJfHFTCHGEgoPrt2kF1mBVxPGOX/I/0M+g6k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 13:23:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2h8jwy9kyc"
-        },
-        {
-          "Name": "label",
-          "Value": "css/details.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Wtb9mz1HJfHFTCHGEgoPrt2kF1mBVxPGOX/I/0M+g6k="
-        }
-      ]
-    },
-    {
       "Route": "css/details.css",
       "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
       "Selectors": [],
@@ -6010,7 +5986,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "847"
+          "Value": "928"
         },
         {
           "Name": "Content-Type",
@@ -6018,11 +5994,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Wtb9mz1HJfHFTCHGEgoPrt2kF1mBVxPGOX/I/0M+g6k=\""
+          "Value": "\"dezoTVtCh1bSlxMwaQAS6Jy9qpLFygZKheEnbQdZprc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 13:23:02 GMT"
+          "Value": "Mon, 02 Dec 2024 16:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6032,7 +6008,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Wtb9mz1HJfHFTCHGEgoPrt2kF1mBVxPGOX/I/0M+g6k="
+          "Value": "sha256-dezoTVtCh1bSlxMwaQAS6Jy9qpLFygZKheEnbQdZprc="
+        }
+      ]
+    },
+    {
+      "Route": "css/details.zefm4q7erk.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dezoTVtCh1bSlxMwaQAS6Jy9qpLFygZKheEnbQdZprc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 16:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zefm4q7erk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/details.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dezoTVtCh1bSlxMwaQAS6Jy9qpLFygZKheEnbQdZprc="
         }
       ]
     },
@@ -14889,6 +14910,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-MMXrlNBnzij7CcWxGT9wVEKkTx+8LMBE9gW0LqgnRx0="
+        }
+      ]
+    },
+    {
+      "Route": "NewImage/12/backgeound.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\12\\backgeound.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 16:31:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac="
+        }
+      ]
+    },
+    {
+      "Route": "NewImage/12/backgeound.xq5rh2y057.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\12\\backgeound.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 16:31:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xq5rh2y057"
+        },
+        {
+          "Name": "label",
+          "Value": "NewImage/12/backgeound.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac="
         }
       ]
     },

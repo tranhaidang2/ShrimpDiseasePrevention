@@ -11,13 +11,17 @@
 
     <!-- Metadata -->
     <div class="d-flex justify-content-center article-meta mb-3">
-        <span class="me-4">Tác giả: @userFullName</span>
+        <span class="me-4">Tác giả: 
+            <strong>
+                <i>@userFullName</i>
+            </strong>
+        </span>
         <span>Ngày tạo: @newsDetails.NewsCreateAt</span>
     </div>
 
     <!-- Content -->
     <div class="article-content">
-        <p>
+        <p class="container">
              @newsDetails.NewsContent
         </p>
     </div>

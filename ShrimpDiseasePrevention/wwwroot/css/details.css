@@ -15,6 +15,7 @@ body {
 .news-main {
     margin-top: 110px !important;
 }
+
 .article-title {
     font-family: var(--heading-font);
     color: var(--text-color);
@@ -31,6 +32,9 @@ body {
     line-height: 1.8;
     margin-bottom: 20px;
     text-align: justify;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 

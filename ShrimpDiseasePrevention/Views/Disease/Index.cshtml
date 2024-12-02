@@ -1,5 +1,5 @@
 ﻿@{
-    var newsList = ViewBag.News as List<ShrimpDiseasePrevention.Models.News>;
+    var diseaseList = ViewBag.Disease as List<ShrimpDiseasePrevention.Models.Disease>;
 }
 
 <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />
@@ -27,7 +27,7 @@
         <!-- News List Container -->
         <div id="news-list">
             <div class="row gy-5">
-                @if (!newsList.Any())
+                @if (diseaseList != null && !diseaseList.Any())
                 {
                     <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
                         <p>Không có bài viết nào.</p>
@@ -35,34 +35,33 @@
                 }
                 else
                 {
-                    @foreach (var news in newsList.OrderByDescending(n => n.NewsCreateAt))
+                    @foreach (var disease in diseaseList.OrderByDescending(n => n.DiseaseCreateAt))
                     {
-                        <div class="col-xl-4 col-md-6 news-item" data-title="@news.NewsTitle.ToLower()"
-                             data-content="@news.NewsContent.ToLower()">
+                        <div class="col-xl-4 col-md-6 news-item" data-title="@disease.DiseaseTitle.ToLower()"
+                             data-content="@disease.DiseaseContent.ToLower()">
                             <div class="post-item position-relative h-100" data-aos="fade-up">
-
                                 <div class="post-img position-relative overflow-hidden">
-                                    @if (news.Images != null && news.Images.Any())
+                                    @if (disease.Images != null && disease.Images.Any())
                                     {
-                                        <img src="@news.Images.FirstOrDefault()?.ImagePath" class="image" alt="Image related to the news article">
+                                        <img src="@disease.Images.FirstOrDefault()?.ImagePath" class="image" alt="Image related to the news article">
                                     }
                                     else
                                     {
                                         <img src="/img/no-image-submit.jpg" class="img-fluid" alt="Image related to the news article">
                                     }
-                                    <span class="post-date">@news.NewsCreateAt.ToString()</span>
+                                    <span class="post-date">@disease.DiseaseCreateAt.ToString()</span>
                                 </div>
 
                                 <div class="post-content d-flex flex-column">
-                                    <h3 class="post-title">@news.NewsTitle</h3>
+                                    <h3 class="post-title">@disease.DiseaseTitle</h3>
 
                                     <div class="meta d-flex align-items-center mt-2">
                                         <div class="d-flex align-items-center">
                                             <i class="bi bi-person"></i>
                                             <span class="ps-2">
-                                                @if (news.User != null)
+                                                @if (disease.User != null)
                                                 {
-                                                    @news.User.UserFullName
+                                                    @disease.User.UserFullName
                                                 }
                                                 else
                                                 {
@@ -74,20 +73,11 @@
 
                                     <hr>
 
-                                    <a href="@Url.Action("Details", "News", new { id = news.NewsId })" class="readmore stretched-link">
+                                    <a href="@Url.Action("Details", "News", new { id = disease.DiseaseId })" class="readmore stretched-link">
                                         <span>Đọc thêm</span>
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
-                                   @*  <hr>
-                                    <form method="post" action="@Url.Action("DeleteNews", "News")" style="display:inline-block;">
-                                        @Html.AntiForgeryToken()
-                                        <input type="hidden" name="id" value="@news.NewsId" />
-                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa bài viết này?');">
-                                            Xóa
-                                        </button>
-                                    </form> *@
                                 </div>
-
                             </div>
                         </div>
                     }
