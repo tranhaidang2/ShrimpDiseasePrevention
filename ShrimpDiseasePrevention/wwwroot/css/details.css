@@ -1,0 +1,102 @@
+﻿:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Nunito", sans-serif;
+    --nav-font: "Inter", sans-serif;
+    --background-color: #ffffff;
+    --default-color: #3d4348;
+    --heading-color: #3e5055;
+    --accent-color: #388da8;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    --new-contrast-color: #D1FAE5;
+    --new-dark-contract-font: #060606;
+    --new-background-color: #e1f5fe;
+}
+
+body {
+    font-family: var(--default-font);
+    line-height: 1.6;
+    background-color: var(--new-background-color);
+    padding-top: 20px;
+    color: var(--default-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    background-color: var(--surface-color);
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 10px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+    .d-flex p {
+        margin: 0 10px;
+        font-size: 1rem;
+        color: var(--default-color);
+    }
+
+.content p {
+    font-size: 1.1rem;
+    color: var(--default-color);
+    /* margin-bottom: 15px; */
+    text-align: justify;
+}
+
+.image-description img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.back-button {
+    font-family: var(--nav-font);
+    font-size: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    /* margin-bottom: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    .back-button i {
+        margin-right: 8px;
+    }
+
+.d-flex p {
+    color: var(--new-dark-contract-font);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}

@@ -14,13 +14,11 @@ namespace ShrimpDiseasePrevention.Controllers
             _context = context;
         }
 
-        // GET: /Access/Register
         public IActionResult Register()
         {
             return View();
         }
 
-        // POST: /Access/Register
         [HttpPost]
         public async Task<IActionResult> Register(User _user)
         {

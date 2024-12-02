@@ -17,8 +17,33 @@ namespace ShrimpDiseasePrevention.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var listNews = await _context.News.Include(n => n.User).ToListAsync();
-            ViewBag.News = listNews;
+            var newsList =  await _context.News
+                .Include(n => n.Images)
+                .Include(n => n.User)
+                .OrderByDescending(n => n.NewsCreateAt)
+                .ToListAsync();
+            ViewBag.News = newsList;
+            return View();
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var newsDetails = await _context.News
+                .Include(n => n.User)
+                .Include(n => n.Images)
+                .FirstOrDefaultAsync(n => n.NewsId == id);
+
+            if (newsDetails == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.NewsDetails = newsDetails;
+
+            ViewBag.Images = newsDetails.Images;
+
+            ViewBag.UserFullName = newsDetails.User?.UserFullName;
+
             return View();
         }
 
@@ -31,14 +56,9 @@ namespace ShrimpDiseasePrevention.Controllers
                 return RedirectToAction("Login", "Access");
             }
 
-            var userFullName = HttpContext.Session.GetString("FullName");
-
-            ViewBag.UserId = userId.Value;
-            ViewBag.UserFullName = userFullName;
 
             return View();
         }
-
 
         [HttpPost]
         public async Task<IActionResult> AddNews(NewsViewModel model)
@@ -52,14 +72,13 @@ namespace ShrimpDiseasePrevention.Controllers
                     NewsTitle = model.NewsTitle,
                     NewsContent = model.NewsContent,
                     NewsShortDescription = model.NewsShortDescription,
-                    NewsCreateAt = model.NewsCreateAt ?? DateTime.Now,
+                    NewsCreateAt = DateTime.Now,
                     UserId = userId,
                 };
 
-                _context.News.Add(news);
+                await _context.News.AddAsync(news);
                 await _context.SaveChangesAsync();
 
-                // Tạo thư mục dựa trên ID bài viết
                 var newsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "NewImage", news.NewsId.ToString());
                 if (!Directory.Exists(newsDirectory))
                 {
@@ -94,8 +113,8 @@ namespace ShrimpDiseasePrevention.Controllers
             }
 
             return View(model);
-
         }
 
+        
     }
 }

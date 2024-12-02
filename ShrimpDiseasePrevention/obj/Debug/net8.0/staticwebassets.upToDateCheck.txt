@@ -43,7 +43,9 @@ C:\Users\dangt\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\b
 C:\Users\dangt\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js
 C:\Users\dangt\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map
 wwwroot\css\about.css
-wwwroot\css\Access.css
+wwwroot\css\access.css
+wwwroot\css\addnews.css
+wwwroot\css\details.css
 wwwroot\css\news.css
 wwwroot\css\section.css
 wwwroot\css\site.css
@@ -139,8 +141,4 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\lib\swiper\swiper-bundle.min.css
 wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
-wwwroot\NewImage\17\about.jpeg
-wwwroot\NewImage\17\about.jpg
-wwwroot\NewImage\17\about1.jpg
-wwwroot\NewImage\about.jpg
-wwwroot\NewImage\backgeound.jpg
+wwwroot\NewImage\5\phantrang.jpg

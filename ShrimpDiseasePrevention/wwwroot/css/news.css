@@ -1,5 +1,5 @@
 ﻿.recent-posts {
-    margin-top: 50px;
+    margin-top: 110px;
 }
 .recent-posts .post-item {
     background: var(--surface-color);
@@ -8,6 +8,7 @@
 }
 
     .recent-posts .post-item .post-img img {
+        width: 100% !important;
         transition: 0.5s;
     }
 
@@ -33,6 +34,8 @@
         font-weight: 700;
         transition: 0.3s;
         margin-bottom: 15px;
+
+        height: 30px;
     }
 
     .recent-posts .post-item .meta i {
@@ -116,10 +119,9 @@
     }
 }
 
-#search-input {
+#search-input, #news-manager {
     margin-top: 200px;
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
     display: block;
     padding: 10px;

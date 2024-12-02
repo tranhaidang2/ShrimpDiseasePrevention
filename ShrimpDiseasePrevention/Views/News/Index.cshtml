@@ -2,20 +2,24 @@
     var newsList = ViewBag.News as List<ShrimpDiseasePrevention.Models.News>;
 }
 
-<link rel="stylesheet" href="~/css/news.css" />
+<link rel="stylesheet" href="~/css/news.css" asp-append-version="true"/>
 
 <!-- Recent Posts Section -->
 <section id="recent-posts" class="recent-posts section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Posts</h2>
-        <p>Necessitatibus eius consequatur</p>
+        <h2></h2>
+        <p></p>
     </div>
     <!-- End Section Title -->
     <!-- Search Input -->
-    <div class="container mb-4">
-        <input type="text" id="search-input" class="form-control" placeholder="Search posts..." />
+    <div class="container mb-4 d-flex justify-content-center align-content-center">
+        <div class="row w-100">
+            <div class="col-12">
+                <input type="text" id="search-input" class="form-control" placeholder="Search posts..." />
+            </div>
+        </div>
     </div>
     <!-- End Search Input -->
 
@@ -23,21 +27,28 @@
         <!-- News List Container -->
         <div id="news-list">
             <div class="row gy-5">
-                @foreach (var news in newsList)
+                @foreach (var news in newsList.OrderByDescending(n => n.NewsCreateAt))
                 {
                     <div class="col-xl-4 col-md-6 news-item" data-title="@news.NewsTitle.ToLower()"
                          data-content="@news.NewsContent.ToLower()">
                         <div class="post-item position-relative h-100" data-aos="fade-up">
 
                             <div class="post-img position-relative overflow-hidden">
-                                <img src="/NewImage/17/about.jpeg" class="img-fluid" alt="News Image">
+                                @if (news.Images != null && news.Images.Any())
+                                {
+                                    <img src="@news.Images.FirstOrDefault()?.ImagePath" class="image" alt="Image related to the news article">
+                                }
+                                else
+                                {
+                                    <img src="/img/about_1.jpg" class="img-fluid" alt="Image related to the news article">
+                                }
                                 <span class="post-date">@news.NewsCreateAt.ToString()</span>
                             </div>
 
                             <div class="post-content d-flex flex-column">
                                 <h3 class="post-title">@news.NewsTitle</h3>
 
-                                <div class="meta d-flex align-items-center">
+                                <div class="meta d-flex align-items-center mt-4">
                                     <div class="d-flex align-items-center">
                                         <i class="bi bi-person"></i>
                                         <span class="ps-2">
@@ -51,17 +62,12 @@
                                             }
                                         </span>
                                     </div>
-                                    <span class="px-3 text-black-50">/</span>
-                                    <div class="d-flex align-items-center">
-                                        <i class="bi bi-folder2"></i>
-                                        <span class="ps-2">"Uncategorized"</span>
-                                    </div>
                                 </div>
 
                                 <hr>
 
-                                <a href="news-details/@news.NewsId" class="readmore stretched-link">
-                                    <span>Read More</span>
+                                <a href="@Url.Action("Details", "News", new { id = news.NewsId })" class="readmore stretched-link">
+                                    <span>Đọc thêm</span>
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
@@ -72,41 +78,45 @@
             </div>
         </div>
 
-        <!-- No Results Found -->
         <div id="no-results" class="text-center d-none" style="height: 80vh; display: flex; justify-content: center; align-items: center;">
             <h4>No results found</h4>
         </div>
     </div>
 </section>
 
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
+        let timeout;
+
         $('#search-input').on('input', function () {
             const query = $(this).val().toLowerCase();
 
-            // Flag to check if any item is visible
-            let hasResults = false;
+            clearTimeout(timeout);
 
-            // Loop through news items and toggle visibility based on search query
-            $('.news-item').each(function () {
-                const title = $(this).data('title');
-                const content = $(this).data('content');
+            timeout = setTimeout(function() {
+                let hasResults = false;
 
-                if (title.includes(query) || content.includes(query)) {
-                    $(this).show();
-                    hasResults = true;
+                $('.news-item').each(function () {
+                    const title = $(this).data('title');
+                    const content = $(this).data('content');
+                  
+                    if (title.includes(query) || content.includes(query)) {
+                        $(this).show();
+                        hasResults = true;
+                    } else {
+                        $(this).hide();
+                    }
+                });
+
+                if (hasResults) {
+                    $('#no-results').addClass('d-none');
                 } else {
-                    $(this).hide();
+                    $('#no-results').removeClass('d-none');
                 }
-            });
-
-            // Show or hide "No results found" message
-            if (hasResults) {
-                $('#no-results').addClass('d-none');
-            } else {
-                $('#no-results').removeClass('d-none');
-            }
+            }, 500);
         });
     });
 </script>

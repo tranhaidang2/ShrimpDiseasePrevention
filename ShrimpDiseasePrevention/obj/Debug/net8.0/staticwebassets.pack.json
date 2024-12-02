@@ -181,32 +181,24 @@
       "PackagePath": "staticwebassets\\ShrimpDiseasePrevention.t0bqlsr4j1.bundle.scp.css"
     },
     {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\17\\about.jpeg",
-      "PackagePath": "staticwebassets\\NewImage\\17\\about.jpeg"
-    },
-    {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\17\\about.jpg",
-      "PackagePath": "staticwebassets\\NewImage\\17\\about.jpg"
-    },
-    {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\17\\about1.jpg",
-      "PackagePath": "staticwebassets\\NewImage\\17\\about1.jpg"
-    },
-    {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\about.jpg",
-      "PackagePath": "staticwebassets\\NewImage\\about.jpg"
-    },
-    {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\backgeound.jpg",
-      "PackagePath": "staticwebassets\\NewImage\\backgeound.jpg"
-    },
-    {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\Access.css",
-      "PackagePath": "staticwebassets\\css\\Access.css"
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\5\\phantrang.jpg",
+      "PackagePath": "staticwebassets\\NewImage\\5\\phantrang.jpg"
     },
     {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\about.css",
       "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\access.css",
+      "PackagePath": "staticwebassets\\css\\access.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\addnews.css",
+      "PackagePath": "staticwebassets\\css\\addnews.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
+      "PackagePath": "staticwebassets\\css\\details.css"
     },
     {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\news.css",

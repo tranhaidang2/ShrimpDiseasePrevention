@@ -1,37 +1,30 @@
-﻿@{
-    var userId = ViewBag.UserId;
-    var userFullName = ViewBag.UserFullName;
-}
+﻿
+<link rel="stylesheet" href="~/css/addnews.css"/>
 
-<h2>Add News</h2>
+<div class="container mt-5">
 
-<form method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label for="NewsTitle">Title</label>
-        <input type="text" class="form-control" id="NewsTitle" name="NewsTitle" required />
-    </div>
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="NewsTitle">Tiêu đề</label>
+            <input type="text" class="form-control" id="NewsTitle" name="NewsTitle" required />
+        </div>
 
-    <div class="form-group">
-        <label for="NewsContent">Content</label>
-        <textarea class="form-control" id="NewsContent" name="NewsContent" rows="5" required></textarea>
-    </div>
+        <div class="form-group">
+            <label for="NewsShortDescription">Mô tả</label>
+            <textarea class="form-control" id="NewsShortDescription" name="NewsShortDescription" rows="3" required></textarea>
+        </div>
 
-    <div class="form-group">
-        <label for="NewsShortDescription">Short Description</label>
-        <textarea class="form-control" id="NewsShortDescription" name="NewsShortDescription" rows="3"></textarea>
-    </div>
+        <div class="form-group">
+            <label for="NewsContent">Nội dung</label>
+            <textarea class="form-control" id="NewsContent" name="NewsContent" rows="5" required></textarea>
+        </div>
 
-    <div class="form-group">
-        <label for="ImageFiles">Upload Images</label>
-        <input type="file" class="form-control" id="ImageFiles" name="ImageFiles" accept="image/*" multiple />
-    </div>
+        <div class="form-group">
+            <label for="ImageFiles">Ảnh đính kèm</label>
+            <input type="file" class="form-control" id="ImageFiles" name="ImageFiles" accept="image/*" multiple />
+        </div>
 
-    <div class="form-group">
-        <label for="NewsCreateAt">Create Date</label>
-        <input type="datetime-local" class="form-control" id="NewsCreateAt" name="NewsCreateAt" />
-    </div>
 
-    <input type="hidden" name="UserId" value="@userFullName" />
-
-    <button type="submit" class="btn btn-primary">Add News</button>
-</form>
+        <button type="submit" class="btn btn-primary">Thêm tin tức</button>
+    </form>
+</div>
