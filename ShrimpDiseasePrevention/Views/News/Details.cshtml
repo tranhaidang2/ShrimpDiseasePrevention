@@ -3,35 +3,46 @@
     var images = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
     var userFullName = ViewBag.UserFullName as string;
 }
-<link rel="stylesheet" href="/css/details.css" />
-    <div class="container mt-5">
-        <a href="#" class="back-button">
-            <i class="bi bi-arrow-left"></i>
-            <p class="">Trở về</p>
-        </a>
+<link rel="stylesheet" href="/css/details.css" asp-append-version="true"/>
 
-        <h1 class="text-center">Tiêu đề bài báo</h1>
+<div class="container mt-5 news-main">
+    <!-- Title -->
+    <h1 class="article-title text-center">@newsDetails.NewsTitle</h1>
 
-        <div class="d-flex justify-content-center align-items-center mb-3">
-            <p class="mr-4">Tác giả: @userFullName</p>
-            <p>Ngày tạo: @newsDetails.NewsCreateAt?.ToString("dd/MM/yyyy")</p>
-        </div>
+    <!-- Metadata -->
+    <div class="d-flex justify-content-center article-meta mb-3">
+        <span class="me-4">Tác giả: @userFullName</span>
+        <span>Ngày tạo: @newsDetails.NewsCreateAt</span>
+    </div>
 
-        @if (newsDetails.NewsShortDescription != null)
+    <!-- Content -->
+    <div class="article-content">
+        <p>
+             @newsDetails.NewsContent
+        </p>
+    </div>
+
+    <!-- Image -->
+    <div class="image-description text-center mb-5">
+        @if (images != null && images.Any())
         {
-            <p><strong>Tóm tắt:</strong> @newsDetails.NewsShortDescription</p>
-        }
-        <div class="image-description mb-5">
-            @if (images != null && images.Any())
+            foreach (var image in images)
             {
-                foreach (var image in images)
+                <img src="@image.ImagePath" alt="Image" class="img-fluid rounded">
+                @if (newsDetails.NewsShortDescription != null)
                 {
-                    <img src="@image.ImagePath" alt="Image" class="img-fluid rounded">
+                    <p class="text-center mt-4" style="font-size: 13px;">
+                        <i>
+                           @newsDetails.NewsShortDescription
+                        </i>
+                    </p>
                 }
             }
-            else
-            {
-                <p hidden></p>
-            }
-        </div>
+        }
+        else
+        {
+            <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
+            </div>
+        }
     </div>
+</div>

@@ -65,6 +65,7 @@ wwwroot\img\carousel_8.jpg
 wwwroot\img\hero-bg-light.webp
 wwwroot\img\hero-services-img.webp
 wwwroot\img\logo.png
+wwwroot\img\no-image-submit.jpg
 wwwroot\js\site.js
 wwwroot\lib\aos\aos.cjs.js
 wwwroot\lib\aos\aos.css
@@ -141,4 +142,3 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\lib\swiper\swiper-bundle.min.css
 wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
-wwwroot\NewImage\5\phantrang.jpg

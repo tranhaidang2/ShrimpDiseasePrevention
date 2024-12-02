@@ -1,0 +1,75 @@
+﻿@{
+    var newsDetails = ViewBag.NewsDetails as ShrimpDiseasePrevention.Models.News;
+    var images = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
+    var userFullName = ViewBag.UserFullName as string;
+}
+
+<link rel="stylesheet" href="~/css/addnews.css" />
+
+<style>
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image-wrapper {
+        flex: 1 1 calc(25% - 20px);
+        margin: 20px;
+        max-width: calc(25% - 20px);
+        box-sizing: border-box;
+    }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+</style>
+<div class="container mt-5">
+
+    <form method="post" enctype="multipart/form-data" asp-action="Edit" asp-controller="News">
+        <div class="form-group">
+            <label for="NewsTitle">Tiêu đề</label>
+            <input type="text" class="form-control" id="NewsTitle" name="NewsTitle" required value="@newsDetails.NewsTitle"/>
+        </div>
+
+        <div class="form-group">
+            <label for="NewsShortDescription">Mô tả</label>
+            <textarea class="form-control" id="NewsShortDescription" name="NewsShortDescription" rows="3" required>@newsDetails.NewsShortDescription</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="NewsContent">Nội dung</label>
+            <textarea class="form-control" id="NewsContent" name="NewsContent" rows="5" required>@newsDetails.NewsContent</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="ImageFiles">Ảnh đính kèm</label>
+            @if (images != null && images.Any())
+            {
+                <div class="d-flex justify-content-center flex-wrap image-container">
+                    @foreach (var image in images)
+                    {
+                        <div class="image-wrapper">
+                            <img src="@image.ImagePath" alt="Image" class="img-fluid rounded">
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p hidden>Không có ảnh</p>
+            }
+
+        </div>
+
+        <div class="form-group">
+            <label for="ImageFiles">Ảnh mới</label>
+            <input type="file" class="form-control" id="ImageFiles" name="ImageFiles" accept="image/*" multiple />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sửa</button>
+    </form>
+</div>
