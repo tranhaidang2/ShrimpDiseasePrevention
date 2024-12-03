@@ -1,0 +1,50 @@
+﻿<link rel="stylesheet" href="~/css/addnews.css" />
+
+<div class="container mt-5">
+    <form method="post" enctype="multipart/form-data">
+        <!-- Disease Title -->
+        <div class="form-group">
+            <label for="DiseaseTitle">Tên bệnh</label>
+            <input type="text" class="form-control" id="DiseaseTitle" name="DiseaseTitle" required />
+        </div>
+
+        <!-- Disease Short Description -->
+        <div class="form-group">
+            <label for="DiseaseShortDescription">Mô tả ngắn</label>
+            <textarea class="form-control" id="DiseaseShortDescription" name="DiseaseShortDescription" rows="3"></textarea>
+        </div>
+
+        <!-- Disease Content -->
+        <div class="form-group">
+            <label for="DiseaseContent">Nội dung</label>
+            <textarea class="form-control" id="DiseaseContent" name="DiseaseContent" rows="5" required></textarea>
+        </div>
+
+        <!-- Disease Symptoms -->
+        <div class="form-group">
+            <label for="DiseaseSymptoms">Triệu chứng</label>
+            <textarea class="form-control" id="DiseaseSymptoms" name="DiseaseSymptoms" rows="3"></textarea>
+        </div>
+
+        <!-- Disease Images -->
+        <div class="form-group">
+            <label for="DiseaseImageFiles">Ảnh bệnh</label>
+            <input type="file" class="form-control" id="DiseaseImageFiles" name="DiseaseImageFiles" accept="image/*" multiple />
+        </div>
+
+        <!-- Prevention Content -->
+        <div class="form-group">
+            <label for="PreventionContent">Phương pháp phòng ngừa</label>
+            <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3"></textarea>
+        </div>
+
+        <!-- Prevention Images -->
+        <div class="form-group">
+            <label for="PreventionImageFiles">Ảnh phòng ngừa</label>
+            <input type="file" class="form-control" id="PreventionImageFiles" name="PreventionImageFiles" accept="image/*" multiple />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Thêm bệnh</button>
+    </form>
+</div>

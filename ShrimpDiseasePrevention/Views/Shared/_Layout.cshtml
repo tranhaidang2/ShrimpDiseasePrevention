@@ -1,6 +1,4 @@
-﻿@model ShrimpDiseasePrevention.Models.User
-
-@{
+﻿@{
     var userFullName = Context.Session.GetString("FullName");
 }
 
@@ -48,8 +46,8 @@
                 <ul>
                     <li><a asp-controller="Home" asp-action="Index" class="active">Trang chủ</a></li>
                     <li><a asp-controller="News" asp-action="Index">Tin tức</a></li>
-                    <li><a asp-controller="News" asp-action="AddNews">Tra cứu</a></li>
-                    <li><a asp-controller="Access" asp-action="Login">Diễn đàn</a></li>
+                    <li><a asp-controller="Disease" asp-action="Index">Tra cứu</a></li>
+                    <li><a asp-controller="Disease" asp-action="AddDisease">Diễn đàn</a></li>
                     <li><a asp-controller="Home" asp-action="Privacy">Về chúng tôi</a></li>
                     <li class="dropdown">
                         <a href="#"><span>Hỗ trợ</span> <i class="bi bi-caret-down-fill toggle-dropdown"></i></a>
@@ -85,9 +83,8 @@
     <footer id="footer" class="footer position-relative light-background">
         <div class="container copyright text-center">
             <p>
-                © <span>Copyright</span> <strong class="px-1 sitename">QuickStart</strong><span>
-                    All Rights
-                    Reserved
+                © <span>Copyright</span> <strong class="px-1 sitename">QuikShrimp</strong><span>
+                    Bản quyền thuộc công ty QuikShrimp
                 </span>
             </p>
         </div>

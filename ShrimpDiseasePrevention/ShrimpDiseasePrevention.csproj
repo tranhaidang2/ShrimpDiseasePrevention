@@ -21,6 +21,7 @@
   <ItemGroup>
     <Folder Include="Views\Post\" />
     <Folder Include="wwwroot\DiseaseImage\" />
+    <Folder Include="wwwroot\PreventionImage\" />
     <Folder Include="wwwroot\NewImage\" />
   </ItemGroup>
 

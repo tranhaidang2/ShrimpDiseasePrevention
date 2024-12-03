@@ -1,0 +1,71 @@
+﻿@{
+    var diseaseDetails = ViewBag.DiseaseDetails as ShrimpDiseasePrevention.Models.Disease;
+    var images = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
+    var userFullName = ViewBag.UserFullName as string;
+}
+<link rel="stylesheet" href="/css/details.css" asp-append-version="true" />
+
+<div class="container mt-5 disease-main">
+    <!-- Title -->
+    <h1 class="article-title text-center">@diseaseDetails.DiseaseTitle</h1>
+
+    <!-- Metadata -->
+    <div class="d-flex justify-content-center article-meta mb-3">
+        <span class="me-4">
+            Tác giả:
+            <strong>
+                <i>@userFullName</i>
+            </strong>
+        </span>
+        <span>Ngày tạo: @diseaseDetails.DiseaseCreateAt</span>
+    </div>
+
+    <!-- Content -->
+    <div class="article-content">
+        <h4>Triệu chứng</h4>
+        <p class="container">
+            @diseaseDetails.DiseaseSymptoms
+        </p>
+
+        <h4>Chi tiết bệnh</h4>
+        <p class="container">
+            @diseaseDetails.DiseaseContent
+        </p>
+    </div>
+
+    <!-- Image -->
+    <div class="image-description text-center mb-5">
+        @if (images != null && images.Any())
+        {
+            foreach (var image in images)
+            {
+                <img src="@image.ImagePath" alt="Disease Image" class="img-fluid rounded mb-3" />
+            }
+        }
+        else
+        {
+            <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
+                <p>Không có hình ảnh được đính kèm.</p>
+            </div>
+        }
+    </div>
+
+    <!-- Prevention -->
+    <div class="prevention-section mt-4">
+        @if (diseaseDetails.Preventions != null && diseaseDetails.Preventions.Any())
+        {
+            <h4>Phòng ngừa</h4>
+            <ul>
+                @foreach (var prevention in diseaseDetails.Preventions)
+                {
+                    <li>@prevention.PreventionContent</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <h4>Phòng ngừa</h4>
+            <p>Không có thông tin phòng ngừa.</p>
+        }
+    </div>
+</div>

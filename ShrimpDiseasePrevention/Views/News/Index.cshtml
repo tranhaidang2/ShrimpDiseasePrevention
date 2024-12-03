@@ -27,7 +27,7 @@
         <!-- News List Container -->
         <div id="news-list">
             <div class="row gy-5">
-                @if (!newsList.Any())
+                @if (newsList == null ||!newsList.Any())
                 {
                     <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
                         <p>Không có bài viết nào.</p>

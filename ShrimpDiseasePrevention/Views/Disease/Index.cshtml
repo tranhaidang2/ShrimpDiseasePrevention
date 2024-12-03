@@ -1,5 +1,5 @@
 ﻿@{
-    var diseaseList = ViewBag.Disease as List<ShrimpDiseasePrevention.Models.Disease>;
+    var diseaseList = ViewBag.Diseases as List<ShrimpDiseasePrevention.Models.Disease>;
 }
 
 <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />
@@ -27,12 +27,13 @@
         <!-- News List Container -->
         <div id="news-list">
             <div class="row gy-5">
-                @if (diseaseList != null && !diseaseList.Any())
+                @if (diseaseList == null || !diseaseList.Any())
                 {
                     <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
                         <p>Không có bài viết nào.</p>
                     </div>
                 }
+
                 else
                 {
                     @foreach (var disease in diseaseList.OrderByDescending(n => n.DiseaseCreateAt))
@@ -73,7 +74,7 @@
 
                                     <hr>
 
-                                    <a href="@Url.Action("Details", "News", new { id = disease.DiseaseId })" class="readmore stretched-link">
+                                    <a href="@Url.Action("Details", "Disease", new { id = disease.DiseaseId })" class="readmore stretched-link">
                                         <span>Đọc thêm</span>
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
