@@ -49,8 +49,6 @@ wwwroot\css\details.css
 wwwroot\css\news.css
 wwwroot\css\section.css
 wwwroot\css\site.css
-wwwroot\DiseaseImage\1\1_domtrang.jpg
-wwwroot\DiseaseImage\1\1_hoaitu.jpg
 wwwroot\favicon.ico
 wwwroot\img\about_1.jpg
 wwwroot\img\about_2.jpg
@@ -148,4 +146,3 @@ wwwroot\NewImage\12\backgeound.jpg
 wwwroot\NewImage\13\about.jpeg
 wwwroot\NewImage\13\domden.jpg
 wwwroot\NewImage\13\domtrang.jpg
-wwwroot\PreventionImage\1\1_about1.jpg

@@ -40,6 +40,12 @@
             foreach (var image in images)
             {
                 <img src="@image.ImagePath" alt="Disease Image" class="img-fluid rounded mb-3" />
+                @if (diseaseDetails.DiseaseShortDescription != null)
+                {
+                    <p class="text-center mt-4" style="font-size: 13px;">
+                        <i>@diseaseDetails.DiseaseShortDescription</i>
+                    </p>
+                }
             }
         }
         else

@@ -86,11 +86,11 @@ public partial class ShrimpGuardContext : DbContext
                     "DiseasePrevention",
                     r => r.HasOne<Prevention>().WithMany()
                         .HasForeignKey("PreventionId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__DiseasePr__Preve__3A4CA8FD"),
                     l => l.HasOne<Disease>().WithMany()
                         .HasForeignKey("DiseaseId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__DiseasePr__Disea__395884C4"),
                     j =>
                     {
@@ -100,6 +100,7 @@ public partial class ShrimpGuardContext : DbContext
                         j.IndexerProperty<int>("PreventionId").HasColumnName("PreventionID");
                     });
         });
+
 
         modelBuilder.Entity<Image>(entity =>
         {

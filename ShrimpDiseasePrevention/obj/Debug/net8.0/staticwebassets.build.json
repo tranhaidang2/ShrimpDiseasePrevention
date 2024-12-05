@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MdCWVq8heFQ6dFumR78ZuaeboF+e8tlPiRAloCIqibM=",
+  "Hash": "fBLoNygWP8NhxSiDCIFsJWsIRHncCvm3NFT/+uOWj38=",
   "Source": "ShrimpDiseasePrevention",
   "BasePath": "_content/ShrimpDiseasePrevention",
   "Mode": "Default",
@@ -1128,48 +1128,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\DiseaseImage\\1\\1_domtrang.jpg",
-      "SourceId": "ShrimpDiseasePrevention",
-      "SourceType": "Discovered",
-      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
-      "BasePath": "_content/ShrimpDiseasePrevention",
-      "RelativePath": "DiseaseImage/1/1_domtrang#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "w4r6bs1hga",
-      "Integrity": "4PmhDBtk3/pS+uxqtSGaSMh4TB+hIBW9LLLd0IljfJc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\DiseaseImage\\1\\1_domtrang.jpg"
-    },
-    {
-      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\DiseaseImage\\1\\1_hoaitu.jpg",
-      "SourceId": "ShrimpDiseasePrevention",
-      "SourceType": "Discovered",
-      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
-      "BasePath": "_content/ShrimpDiseasePrevention",
-      "RelativePath": "DiseaseImage/1/1_hoaitu#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "d03h3ki2em",
-      "Integrity": "fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\DiseaseImage\\1\\1_hoaitu.jpg"
     },
     {
       "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\favicon.ico",
@@ -3207,27 +3165,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\NewImage\\13\\domtrang.jpg"
-    },
-    {
-      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PreventionImage\\1\\1_about1.jpg",
-      "SourceId": "ShrimpDiseasePrevention",
-      "SourceType": "Discovered",
-      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
-      "BasePath": "_content/ShrimpDiseasePrevention",
-      "RelativePath": "PreventionImage/1/1_about1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "bsy0g2usur",
-      "Integrity": "G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\PreventionImage\\1\\1_about1.jpg"
     }
   ],
   "Endpoints": [
@@ -6426,170 +6363,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-sjwUe0yfp1q1m3B3EDBAtXCNEKJibemyqRzU2p1fw7U="
-        }
-      ]
-    },
-    {
-      "Route": "DiseaseImage/1/1_domtrang.jpg",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\DiseaseImage\\1\\1_domtrang.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8228"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4PmhDBtk3/pS+uxqtSGaSMh4TB+hIBW9LLLd0IljfJc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 16:44:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4PmhDBtk3/pS+uxqtSGaSMh4TB+hIBW9LLLd0IljfJc="
-        }
-      ]
-    },
-    {
-      "Route": "DiseaseImage/1/1_domtrang.w4r6bs1hga.jpg",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\DiseaseImage\\1\\1_domtrang.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8228"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4PmhDBtk3/pS+uxqtSGaSMh4TB+hIBW9LLLd0IljfJc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 16:44:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "w4r6bs1hga"
-        },
-        {
-          "Name": "label",
-          "Value": "DiseaseImage/1/1_domtrang.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4PmhDBtk3/pS+uxqtSGaSMh4TB+hIBW9LLLd0IljfJc="
-        }
-      ]
-    },
-    {
-      "Route": "DiseaseImage/1/1_hoaitu.d03h3ki2em.jpg",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\DiseaseImage\\1\\1_hoaitu.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12054"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 16:44:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d03h3ki2em"
-        },
-        {
-          "Name": "label",
-          "Value": "DiseaseImage/1/1_hoaitu.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14="
-        }
-      ]
-    },
-    {
-      "Route": "DiseaseImage/1/1_hoaitu.jpg",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\DiseaseImage\\1\\1_hoaitu.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12054"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 16:44:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14="
         }
       ]
     },
@@ -15528,88 +15301,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-4PmhDBtk3/pS+uxqtSGaSMh4TB+hIBW9LLLd0IljfJc="
-        }
-      ]
-    },
-    {
-      "Route": "PreventionImage/1/1_about1.bsy0g2usur.jpg",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PreventionImage\\1\\1_about1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "220785"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 16:44:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bsy0g2usur"
-        },
-        {
-          "Name": "label",
-          "Value": "PreventionImage/1/1_about1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI="
-        }
-      ]
-    },
-    {
-      "Route": "PreventionImage/1/1_about1.jpg",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PreventionImage\\1\\1_about1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "220785"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 16:44:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI="
         }
       ]
     },

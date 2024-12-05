@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[W:/DA2/ShrimpDiseasePrevention/ShrimpDiseasePrevention/Views/Disease/EditDisease.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZVxFZGl0RGlzZWFzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [W:/DA2/ShrimpDiseasePrevention/ShrimpDiseasePrevention/Views/Disease/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

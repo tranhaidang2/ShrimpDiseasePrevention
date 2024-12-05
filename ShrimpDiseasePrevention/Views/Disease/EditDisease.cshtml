@@ -1,0 +1,86 @@
+﻿@{
+    var diseaseDetails = ViewBag.DiseaseDetails as ShrimpDiseasePrevention.Models.Disease;
+    var diseaseImages = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
+    var userFullName = ViewBag.UserFullName as string;
+}
+
+<link rel="stylesheet" href="~/css/adddisease.css" />
+
+<style>
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image-wrapper {
+        flex: 1 1 calc(25% - 20px);
+        margin: 20px;
+        max-width: calc(25% - 20px);
+        box-sizing: border-box;
+    }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+</style>
+
+<div class="container mt-5">
+
+    <form method="post" enctype="multipart/form-data" asp-action="EditDisease" asp-controller="Disease">
+        <input type="hidden" name="DiseaseId" value="@diseaseDetails.DiseaseId" />
+
+        <div class="form-group">
+            <label for="DiseaseTitle">Tên bệnh</label>
+            <input type="text" class="form-control" id="DiseaseTitle" name="DiseaseTitle" required value="@diseaseDetails.DiseaseTitle" />
+        </div>
+
+        <div class="form-group">
+            <label for="DiseaseShortDescription">Mô tả ngắn</label>
+            <textarea class="form-control" id="DiseaseShortDescription" name="DiseaseShortDescription" rows="3" required>@diseaseDetails.DiseaseShortDescription</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="DiseaseSymptoms">Triệu chứng</label>
+            <textarea class="form-control" id="DiseaseSymptoms" name="DiseaseSymptoms" rows="3" required>@diseaseDetails.DiseaseSymptoms</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="DiseaseContent">Nội dung chi tiết</label>
+            <textarea class="form-control" id="DiseaseContent" name="DiseaseContent" rows="5" required>@diseaseDetails.DiseaseContent</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="ImageFiles">Ảnh đính kèm</label>
+            @if (diseaseImages != null && diseaseImages.Any())
+            {
+                <div class="d-flex justify-content-center flex-wrap image-container">
+                    @foreach (var image in diseaseImages)
+                    {
+                        <div class="image-wrapper">
+                            <img src="@image.ImagePath" alt="Disease Image" class="img-fluid rounded">
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p hidden>Không có ảnh</p>
+            }
+        </div>
+
+        <div class="form-group">
+            <label for="DiseaseImageFiles">Ảnh mới</label>
+            <input type="file" class="form-control" id="DiseaseImageFiles" name="DiseaseImageFiles" accept="image/*" multiple />
+        </div>
+
+        <div class="form-group">
+            <label for="PreventionContent">Phương pháp phòng chống</label>
+            <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3">@diseaseDetails.Preventions.FirstOrDefault()?.PreventionContent</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sửa</button>
+    </form>
+</div>

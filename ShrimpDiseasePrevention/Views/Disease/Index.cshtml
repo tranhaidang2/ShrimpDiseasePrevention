@@ -74,10 +74,11 @@
 
                                     <hr>
 
-                                    <a href="@Url.Action("Details", "Disease", new { id = disease.DiseaseId })" class="readmore stretched-link">
-                                        <span>Đọc thêm</span>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
+                                    <form action="@Url.Action("DeleteDisease", "Disease", new { id = disease.DiseaseId })" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>

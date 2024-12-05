@@ -209,6 +209,7 @@ namespace ShrimpDiseasePrevention.Controllers
             ViewBag.Images = newsDetails.Images;
             return View(model);
         }
+
         [HttpPost]
         public async Task<IActionResult> DeleteNews(int id)
         {
