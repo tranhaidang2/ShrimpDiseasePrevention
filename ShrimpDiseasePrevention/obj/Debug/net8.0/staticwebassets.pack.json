@@ -181,20 +181,20 @@
       "PackagePath": "staticwebassets\\ShrimpDiseasePrevention.t0bqlsr4j1.bundle.scp.css"
     },
     {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\DiseaseImage\\4\\4_domtrang.jpg",
+      "PackagePath": "staticwebassets\\DiseaseImage\\4\\4_domtrang.jpg"
+    },
+    {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\12\\backgeound.jpg",
       "PackagePath": "staticwebassets\\NewImage\\12\\backgeound.jpg"
     },
     {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\13\\about.jpeg",
-      "PackagePath": "staticwebassets\\NewImage\\13\\about.jpeg"
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\13\\ret.jpg",
+      "PackagePath": "staticwebassets\\NewImage\\13\\ret.jpg"
     },
     {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\13\\domden.jpg",
-      "PackagePath": "staticwebassets\\NewImage\\13\\domden.jpg"
-    },
-    {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\13\\domtrang.jpg",
-      "PackagePath": "staticwebassets\\NewImage\\13\\domtrang.jpg"
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PreventionImage\\4\\4_backgeound.jpg",
+      "PackagePath": "staticwebassets\\PreventionImage\\4\\4_backgeound.jpg"
     },
     {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\about.css",

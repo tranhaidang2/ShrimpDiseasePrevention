@@ -33,6 +33,9 @@ namespace ShrimpDiseasePrevention.Controllers
                 .Include(d => d.Images)
                 .Include(d => d.User)
                 .FirstOrDefaultAsync(n => n.DiseaseId == id);
+            var preventionDetais = await _context.Preventions
+                .Include(p => p.Images)
+                .FirstOrDefaultAsync(n => n.PreventionId == id);
 
             if (diseaseDetails == null)
             {
@@ -40,6 +43,8 @@ namespace ShrimpDiseasePrevention.Controllers
             }
 
             ViewBag.DiseaseDetails = diseaseDetails;
+
+            ViewBag.PreventionDetails = preventionDetais;
 
             ViewBag.Images = diseaseDetails.Images;
 

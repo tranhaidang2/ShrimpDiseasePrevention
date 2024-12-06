@@ -1,22 +1,22 @@
 ﻿
-<link rel="stylesheet" href="~/css/addnews.css"/>
+<link rel="stylesheet" href="~/css/addnews.css" />
 
 <div class="container mt-5">
 
     <form method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="NewsTitle">Tiêu đề</label>
-            <input type="text" class="form-control" id="NewsTitle" name="NewsTitle" required />
+            <input type="text" class="form-control" id="NewsTitle" name="NewsTitle" required placeholder="Nhập tiêu đề bài viết (tối đa 255 kí tự)"/>
         </div>
 
         <div class="form-group">
             <label for="NewsShortDescription">Mô tả</label>
-            <textarea class="form-control" id="NewsShortDescription" name="NewsShortDescription" rows="3" required></textarea>
+            <textarea class="form-control" id="NewsShortDescription" name="NewsShortDescription" rows="3" required placeholder="Nhập mô tả tin tức (tối đa 255 kí tự)"></textarea>
         </div>
 
         <div class="form-group">
             <label for="NewsContent">Nội dung</label>
-            <textarea class="form-control" id="NewsContent" name="NewsContent" rows="5" required></textarea>
+            <textarea class="form-control" id="NewsContent" name="NewsContent" rows="5" required placeholder="Nhập nội dung tin tức"></textarea>
         </div>
 
         <div class="form-group">
@@ -28,3 +28,41 @@
         <button type="submit" class="btn btn-primary">Thêm tin tức</button>
     </form>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const newsTitle = document.getElementById("NewsTitle");
+        const newsDescription = document.getElementById("NewsShortDescription");
+        const newsContent = document.getElementById("NewsContent");
+
+        newsTitle.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập tiêu đề tin tức");
+            }
+        };
+
+        newsTitle.oninput = function () {
+           this.setCustomValidity("");
+        };
+
+        newsDescription.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập mô tả tin tức");
+            }
+        };
+
+        newsDescription.oninput = function () {
+           this.setCustomValidity("");
+        };
+
+        newsContent.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập nội dung tin tức");
+            }
+        };
+
+        newsContent.oninput = function () {
+           this.setCustomValidity("");
+        };
+    });
+</script>

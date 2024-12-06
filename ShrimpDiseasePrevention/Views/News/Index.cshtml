@@ -17,7 +17,7 @@
     <div class="container mb-4 d-flex justify-content-center align-content-center">
         <div class="row w-100">
             <div class="col-12">
-                <input type="text" id="search-input" class="form-control" placeholder="Search posts..." />
+                <input type="text" id="search-input" class="form-control" placeholder="Tìm kiếm tin tức..." />
             </div>
         </div>
     </div>
@@ -78,8 +78,8 @@
                                         <span>Đọc thêm</span>
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
-                                   @*  <hr>
-                                    <form method="post" action="@Url.Action("DeleteNews", "News")" style="display:inline-block;">
+                                    <hr>
+                                    @* <form method="post" action="@Url.Action("DeleteNews", "News")" style="display:inline-block;">
                                         @Html.AntiForgeryToken()
                                         <input type="hidden" name="id" value="@news.NewsId" />
                                         <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa bài viết này?');">

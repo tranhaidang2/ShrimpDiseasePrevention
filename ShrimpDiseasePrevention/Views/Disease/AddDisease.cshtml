@@ -48,3 +48,65 @@
         <button type="submit" class="btn btn-primary">Thêm bệnh</button>
     </form>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const diseaseTitle = document.getElementById("DiseaseTitle");
+        const diseaseDescription = document.getElementById("DiseaseShortDescription");
+        const diseaseContent = document.getElementById("DiseaseContent");
+        const diseaseSymptoms = document.getElementById("DiseaseSymptoms");
+        const preventionContent = document.getElementById("PreventionContent");
+
+
+
+        diseaseTitle.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập tiêu đề bệnh");
+            }
+        };
+
+        diseaseTitle.oninput = function () {
+           this.setCustomValidity("");
+        };
+
+        diseaseDescription.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập mô tả bệnh");
+            }
+        };
+
+        diseaseDescription.oninput = function () {
+           this.setCustomValidity("");
+        };
+
+        diseaseContent.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập nội dung bệnh");
+            }
+        };
+
+        diseaseContent.oninput = function () {
+           this.setCustomValidity("");
+        };
+
+        diseaseSymptoms.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập triệu chứng bệnh");
+            }
+        };
+
+        diseaseSymptoms.oninput = function () {
+           this.setCustomValidity("");
+        };
+
+        preventionContent.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập phương pháp phòng chống");
+            }
+        };
+
+        preventionContent.oninput = function () {
+           this.setCustomValidity("");
+        };
+    });
+</script>
