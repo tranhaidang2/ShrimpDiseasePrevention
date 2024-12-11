@@ -1,5 +1,7 @@
 ﻿@{
     var newsList = ViewBag.News as List<ShrimpDiseasePrevention.Models.News>;
+    int? roleId = Context.Session.GetInt32("RoleId");
+
 }
 
 <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />
@@ -13,6 +15,17 @@
         <p></p>
     </div>
     <!-- End Section Title -->
+    <!--Controller for admin-->
+    @if (roleId == 1)
+    {
+        <div class="container mb-4 d-flex justify-content-start align-content-center">
+            <div>
+                <a href="/News/AddNews" class="btn btn-primary">
+                    Thêm tin tức
+                </a>
+            </div>
+        </div>
+    }
     <!-- Search Input -->
     <div class="container mb-4 d-flex justify-content-center align-content-center">
         <div class="row w-100">
@@ -27,7 +40,7 @@
         <!-- News List Container -->
         <div id="news-list">
             <div class="row gy-5">
-                @if (newsList == null ||!newsList.Any())
+                @if (newsList == null || !newsList.Any())
                 {
                     <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
                         <p>Không có bài viết nào.</p>
@@ -78,14 +91,6 @@
                                         <span>Đọc thêm</span>
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
-                                    <hr>
-                                    @* <form method="post" action="@Url.Action("DeleteNews", "News")" style="display:inline-block;">
-                                        @Html.AntiForgeryToken()
-                                        <input type="hidden" name="id" value="@news.NewsId" />
-                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa bài viết này?');">
-                                            Xóa
-                                        </button>
-                                    </form> *@
                                 </div>
 
                             </div>

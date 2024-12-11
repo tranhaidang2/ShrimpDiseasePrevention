@@ -44,12 +44,13 @@ body {
 }
 
 .image-description img {
-    width: 100%; /* Chiều rộng tự điều chỉnh */
-    height: auto; /* Giữ nguyên tỉ lệ hình ảnh */
-    border-radius: 10px;
-    margin: 10px 0; /* Giảm khoảng cách margin */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #F8F9FA;
+    margin-top: 20px;
+    max-width: 100%;
+/*    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 }
+
 
 .image-description p {
     font-size: 0.875rem; /* Font chữ nhỏ hơn trên thiết bị nhỏ */

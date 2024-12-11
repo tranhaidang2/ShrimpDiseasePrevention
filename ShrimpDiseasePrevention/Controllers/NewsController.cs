@@ -210,7 +210,7 @@ namespace ShrimpDiseasePrevention.Controllers
             return View(model);
         }
 
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> DeleteNews(int id)
         {
             var news = await _context.News

@@ -1,5 +1,7 @@
 ﻿@{
     var diseaseList = ViewBag.Diseases as List<ShrimpDiseasePrevention.Models.Disease>;
+    int? roleId = Context.Session.GetInt32("RoleId");
+
 }
 
 <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />
@@ -13,6 +15,17 @@
         <p></p>
     </div>
     <!-- End Section Title -->
+    @if (roleId == 1)
+    {
+        <div class="container mb-4 d-flex justify-content-start align-content-center">
+            <div>
+                <a href="/Disease/AddDisease" class="btn btn-primary">
+                    Thêm dịch bệnh mới
+                </a>
+            </div>
+        </div>
+    }
+
     <!-- Search Input -->
     <div class="container mb-4 d-flex justify-content-center align-content-center">
         <div class="row w-100">

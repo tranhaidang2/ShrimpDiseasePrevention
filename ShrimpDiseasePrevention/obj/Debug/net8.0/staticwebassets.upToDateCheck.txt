@@ -49,7 +49,6 @@ wwwroot\css\details.css
 wwwroot\css\news.css
 wwwroot\css\section.css
 wwwroot\css\site.css
-wwwroot\DiseaseImage\4\4_domtrang.jpg
 wwwroot\favicon.ico
 wwwroot\img\about_1.jpg
 wwwroot\img\about_2.jpg
@@ -143,6 +142,4 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\lib\swiper\swiper-bundle.min.css
 wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
-wwwroot\NewImage\12\backgeound.jpg
-wwwroot\NewImage\13\ret.jpg
-wwwroot\PreventionImage\4\4_backgeound.jpg
+wwwroot\NewImage\13\download.jpg

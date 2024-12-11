@@ -3,7 +3,7 @@
     var images = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
     var userFullName = ViewBag.UserFullName as string;
 }
-<link rel="stylesheet" href="/css/details.css" asp-append-version="true"/>
+<link rel="stylesheet" href="/css/details.css" asp-append-version="true" />
 
 <div class="container mt-5 news-main">
     <!-- Title -->
@@ -11,7 +11,8 @@
 
     <!-- Metadata -->
     <div class="d-flex justify-content-center article-meta mb-3">
-        <span class="me-4">Tác giả: 
+        <span class="me-4">
+            Tác giả:
             <strong>
                 <i>@userFullName</i>
             </strong>
@@ -22,7 +23,7 @@
     <!-- Content -->
     <div class="article-content">
         <p class="container">
-             @newsDetails.NewsContent
+            @newsDetails.NewsContent
         </p>
     </div>
 
@@ -37,7 +38,7 @@
                 {
                     <p class="text-center mt-4" style="font-size: 13px;">
                         <i>
-                           @newsDetails.NewsShortDescription
+                            @newsDetails.NewsShortDescription
                         </i>
                     </p>
                 }
@@ -48,5 +49,17 @@
             <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
             </div>
         }
+    </div>
+
+    <!-- Edit Button -->
+    <div class="text-center mt-4">
+        <a href="/News/EditNews/@newsDetails.NewsId" class="btn btn-primary">
+            Chỉnh sửa bài viết
+        </a>
+    </div>
+    <div class="text-center mt-4">
+        <a href="/News/DeleteNews/@newsDetails.NewsId" class="btn btn-danger">
+            Xóa bài viết
+        </a>
     </div>
 </div>
