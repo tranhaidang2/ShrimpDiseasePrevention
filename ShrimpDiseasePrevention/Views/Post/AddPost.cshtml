@@ -1,0 +1,57 @@
+﻿@model ShrimpDiseasePrevention.ViewModel.PostViewModel
+
+@{
+    ViewData["Title"] = "Thêm bài viết mới";
+}
+
+<link rel="stylesheet" href="~/css/addnews.css" />
+
+<div class="container mt-5">
+    <form asp-action="AddPost" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="PostTitle">Tiêu đề bài viết</label>
+            <input type="text" class="form-control" id="PostTitle" name="PostTitle" value="@Model.PostTitle" placeholder="Nhập tiêu đề bài viết" required />
+        </div>
+
+        <div class="form-group">
+            <label for="PostContent">Nội dung bài viết</label>
+            <textarea class="form-control" id="PostContent" name="PostContent" rows="5" placeholder="Nhập nội dung bài viết" required>@Model.PostContent</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="Images">Ảnh đính kèm</label>
+            <input type="file" class="form-control" id="Images" name="Images" accept="image/*" multiple />
+        </div>
+
+        <input type="hidden" name="UserId" value="@Model.UserId" />
+
+        <button type="submit" class="btn btn-primary">Thêm bài viết</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const postTitle = document.getElementById("PostTitle");
+        const postContent = document.getElementById("PostContent");
+
+        postTitle.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập tiêu đề bài viết");
+            }
+        };
+
+        postTitle.oninput = function () {
+            this.setCustomValidity("");
+        };
+
+        postContent.oninvalid = function () {
+            if (this.validity.valueMissing) {
+                this.setCustomValidity("Nhập nội dung bài viết");
+            }
+        };
+
+        postContent.oninput = function () {
+            this.setCustomValidity("");
+        };
+    });
+</script>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ShrimpDiseasePrevention.Models.Post>
+
+@{
+    int? roleId = Context.Session.GetInt32("RoleId");
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/css/post.css" />
+
+
+<div class="post_list container">
+    @if (roleId == 1)
+    {
+        <p>
+            <a asp-action="AddPost" class="btn btn-primary">Tạo bài viết mới</a>
+        </p>
+    }
+
+    <div class="post-container">
+        @if (Model == null || !Model.Any())
+        {
+            <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
+                <p>Không có bài viết nào.</p>
+            </div>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <div class="user-info">
+                                <span class="user-name">@item.User?.UserFullName</span>
+                                <span class="post-date">@item.PostCreateAt?.ToString("dd/MM/yyyy")</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-body">
+                        <h5 class="post-title">@item.PostTitle</h5>
+
+                        <p class="post-content">@item.PostContent</p>
+                    </div>
+
+                    <div class="post-actions">
+                        <a asp-action="DetailsPost" asp-route-postId="@item.PostId" class="btn btn-primary ">Chi tiết</a>
+                    </div>
+
+                    @if (roleId == 1)
+                    {
+                        <form method="post" action="/Post/DeletePost" class="d-inline">
+                            <input type="hidden" name="postId" value="@item.PostId" />
+                            <button type="submit" class="btn btn-danger text-white">Xóa</button>
+                        </form>
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>

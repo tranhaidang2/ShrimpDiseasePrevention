@@ -1,6 +1,8 @@
 ﻿@{
     var diseaseDetails = ViewBag.DiseaseDetails as ShrimpDiseasePrevention.Models.Disease;
     var images = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
+    var preventionDetails = ViewBag.PreventionDetails as ShrimpDiseasePrevention.Models.Prevention;
+    var preventionImages = ViewBag.PreventionImages as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
     var userFullName = ViewBag.UserFullName as string;
 }
 <link rel="stylesheet" href="/css/details.css" asp-append-version="true" />
@@ -73,5 +75,46 @@
             <h4>Phòng ngừa</h4>
             <p>Không có thông tin phòng ngừa.</p>
         }
+    </div>
+    <div class="form-group">
+        <label for="PreventionContent">Phương pháp phòng chống</label>
+        <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3">
+            @preventionDetails?.PreventionContent
+            </textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="PreventionImages">Ảnh đính kèm</label>
+        @if (preventionImages != null && preventionImages.Any())
+        {
+            <div class="d-flex justify-content-center flex-wrap image-container">
+                @foreach (var image in preventionImages)
+                {
+                    <div class="image-wrapper">
+                        <img src="@image.ImagePath" alt="Prevention Image" class="img-fluid rounded">
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p hidden>Không có ảnh</p>
+        }
+    </div>
+
+    <div class="form-group">
+        <label for="PreventionImageFiles">Ảnh mới</label>
+        <input type="file" class="form-control" id="PreventionImageFiles" name="PreventionImageFiles" accept="image/*" multiple />
+    </div>
+    <!-- Edit Button -->
+    <div class="text-center mt-4">
+        <a href="/Disease/EditDisease/@diseaseDetails.DiseaseId" class="btn btn-primary">
+            Chỉnh sửa thông tin
+        </a>
+    </div>
+    <div class="text-center mt-4">
+        <a href="@Url.Action("DeleteDisease", "Disease", new { id = diseaseDetails.DiseaseId })" class="readmore stretched-link">
+            Xóa
+        </a>
     </div>
 </div>

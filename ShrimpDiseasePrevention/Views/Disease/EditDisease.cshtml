@@ -1,8 +1,11 @@
 ﻿@{
     var diseaseDetails = ViewBag.DiseaseDetails as ShrimpDiseasePrevention.Models.Disease;
     var diseaseImages = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
+    var preventionDetails = ViewBag.PreventionDetails as ShrimpDiseasePrevention.Models.Prevention;
+    var preventionImages = ViewBag.PreventionImages as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
     var userFullName = ViewBag.UserFullName as string;
 }
+
 
 <link rel="stylesheet" href="~/css/adddisease.css" />
 
@@ -56,11 +59,39 @@
             <label for="ImageFiles">Ảnh đính kèm</label>
             @if (diseaseImages != null && diseaseImages.Any())
             {
+                foreach (var image in diseaseImages)
+                {
+                    <img src="@image.ImagePath" alt="Disease Image" />
+                }
+            }
+            else
+            {
+                <p>No disease images found.</p>
+            }
+
+        </div>
+
+        <div class="form-group">
+            <label for="DiseaseImageFiles">Ảnh mới</label>
+            <input type="file" class="form-control" id="DiseaseImageFiles" name="DiseaseImageFiles" accept="image/*" multiple />
+        </div>
+
+        <div class="form-group">
+            <label for="PreventionContent">Phương pháp phòng chống</label>
+            <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3">
+                @preventionDetails?.PreventionContent
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="PreventionImages">Ảnh đính kèm</label>
+            @if (preventionImages != null && preventionImages.Any())
+            {
                 <div class="d-flex justify-content-center flex-wrap image-container">
-                    @foreach (var image in diseaseImages)
+                    @foreach (var image in preventionImages)
                     {
                         <div class="image-wrapper">
-                            <img src="@image.ImagePath" alt="Disease Image" class="img-fluid rounded">
+                            <img src="@image.ImagePath" alt="Prevention Image" class="img-fluid rounded">
                         </div>
                     }
                 </div>
@@ -72,14 +103,10 @@
         </div>
 
         <div class="form-group">
-            <label for="DiseaseImageFiles">Ảnh mới</label>
-            <input type="file" class="form-control" id="DiseaseImageFiles" name="DiseaseImageFiles" accept="image/*" multiple />
+            <label for="PreventionImageFiles">Ảnh mới</label>
+            <input type="file" class="form-control" id="PreventionImageFiles" name="PreventionImageFiles" accept="image/*" multiple />
         </div>
 
-        <div class="form-group">
-            <label for="PreventionContent">Phương pháp phòng chống</label>
-            <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3">@diseaseDetails.Preventions.FirstOrDefault()?.PreventionContent</textarea>
-        </div>
 
         <button type="submit" class="btn btn-primary">Sửa</button>
     </form>

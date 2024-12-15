@@ -181,10 +181,6 @@
       "PackagePath": "staticwebassets\\ShrimpDiseasePrevention.t0bqlsr4j1.bundle.scp.css"
     },
     {
-      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\NewImage\\13\\download.jpg",
-      "PackagePath": "staticwebassets\\NewImage\\13\\download.jpg"
-    },
-    {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\about.css",
       "PackagePath": "staticwebassets\\css\\about.css"
     },
@@ -203,6 +199,10 @@
     {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\news.css",
       "PackagePath": "staticwebassets\\css\\news.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
+      "PackagePath": "staticwebassets\\css\\post.css"
     },
     {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\section.css",

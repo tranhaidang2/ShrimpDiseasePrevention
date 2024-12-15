@@ -47,6 +47,7 @@ wwwroot\css\access.css
 wwwroot\css\addnews.css
 wwwroot\css\details.css
 wwwroot\css\news.css
+wwwroot\css\post.css
 wwwroot\css\section.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
@@ -142,4 +143,3 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\lib\swiper\swiper-bundle.min.css
 wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
-wwwroot\NewImage\13\download.jpg

@@ -1,0 +1,56 @@
+﻿@model ShrimpDiseasePrevention.Models.Post
+
+@{
+    ViewData["Title"] = "Chi tiết bài viết";
+}
+
+<h1>@Model.PostTitle</h1>
+<p>@Model.PostContent</p>
+<p><strong>Ngày tạo:</strong> @Model.PostCreateAt?.ToString("dd/MM/yyyy")</p>
+
+<!-- Hiển thị ảnh liên quan đến bài viết -->
+@if (Model.Images.Any())
+{
+    <div class="post-images">
+        @foreach (var image in Model.Images)
+        {
+            <img src="@image.ImagePath" alt="Post image" class="post-image" />
+        }
+    </div>
+}
+
+<h3>Comments</h3>
+@if (Model.Comments.Any())
+{
+    <ul class="comments-list">
+        @foreach (var comment in Model.Comments)
+        {
+            <li>
+                <p><strong>@comment.User.UserName</strong> (<em>@comment.CommentCreateAt?.ToString("dd/MM/yyyy")</em>):</p>
+                <p>@comment.CommentContent</p>
+
+                <!-- Nút xóa comment chỉ hiển thị nếu người dùng là chủ sở hữu hoặc admin -->
+                @if (comment.UserId == Context.Session.GetInt32("UserId") || User.IsInRole("Admin"))
+                {
+                    <form method="post" action="@Url.Action("DeleteComment", "Post")" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="commentId" value="@comment.CommentId" />
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </form>
+                }
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Không có bình luận nào.</p>
+}
+
+<!-- Form thêm comment -->
+<h3>Thêm bình luận</h3>
+<form method="post" action="@Url.Action("AddComment", "Post")">
+    <input type="hidden" name="PostId" value="@Model.PostId" />
+    <textarea name="CommentContent" rows="4" placeholder="Viết bình luận của bạn..." required></textarea>
+    <button type="submit">Gửi bình luận</button>
+</form>

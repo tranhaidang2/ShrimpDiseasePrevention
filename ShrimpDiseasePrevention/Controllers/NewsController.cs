@@ -155,7 +155,6 @@ namespace ShrimpDiseasePrevention.Controllers
                 news.NewsShortDescription = model.NewsShortDescription;
                 news.NewsCreateAt = DateTime.Now;
 
-                // Xử lý ảnh
                 var newsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "NewImage", news.NewsId.ToString());
 
                 if (!Directory.Exists(newsDirectory))

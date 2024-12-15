@@ -33,7 +33,8 @@ namespace ShrimpDiseasePrevention.Controllers
                 .Include(d => d.Images)
                 .Include(d => d.User)
                 .FirstOrDefaultAsync(n => n.DiseaseId == id);
-            var preventionDetais = await _context.Preventions
+
+            var preventionDetails = await _context.Preventions
                 .Include(p => p.Images)
                 .FirstOrDefaultAsync(n => n.PreventionId == id);
 
@@ -43,12 +44,10 @@ namespace ShrimpDiseasePrevention.Controllers
             }
 
             ViewBag.DiseaseDetails = diseaseDetails;
-
-            ViewBag.PreventionDetails = preventionDetais;
-
-            ViewBag.Images = diseaseDetails.Images;
-
+            ViewBag.Images = diseaseDetails.Images?.ToList() ?? new List<Image>();
             ViewBag.UserFullName = diseaseDetails.User?.UserFullName;
+            ViewBag.PreventionDetails = preventionDetails;
+            ViewBag.PreventionImages = preventionDetails?.Images?.ToList() ?? new List<Image>();
 
             return View();
         }
@@ -168,14 +167,20 @@ namespace ShrimpDiseasePrevention.Controllers
                 .Include(d => d.User)
                 .FirstOrDefaultAsync(d => d.DiseaseId == id);
 
+            var preventionDetails = await _context.Preventions
+               .Include(p => p.Images)
+               .FirstOrDefaultAsync(n => n.PreventionId == id);
+
             if (diseaseDetails == null)
             {
                 return NotFound();
             }
 
             ViewBag.DiseaseDetails = diseaseDetails;
-            ViewBag.Images = diseaseDetails.Images;
+            ViewBag.Images = diseaseDetails.Images?.ToList() ?? new List<Image>();
             ViewBag.UserFullName = diseaseDetails.User?.UserFullName;
+            ViewBag.PreventionDetails = preventionDetails;
+            ViewBag.PreventionImages = preventionDetails?.Images?.ToList() ?? new List<Image>();
 
             return View();
         }
@@ -308,7 +313,7 @@ namespace ShrimpDiseasePrevention.Controllers
         }
 
 
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> DeleteDisease(int id)
         {
             var disease = await _context.Diseases
