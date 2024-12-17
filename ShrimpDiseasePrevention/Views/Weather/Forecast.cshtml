@@ -1,0 +1,100 @@
+﻿@model WeatherForecast
+
+@{
+    ViewData["Title"] = "Dự báo thời tiết";
+}
+
+<div class="container" style="margin-top: 100px;">
+    <h1 class="mb-4 text-center">Dự báo Thời tiết</h1>
+
+    <!-- Form để nhập tên tỉnh/thành phố -->
+    <form asp-action="Forecast" method="post" class="card p-4 shadow-sm">
+        <div class="form-group">
+            <label for="city" class="form-label">Nhập tên tỉnh/thành phố:</label>
+            <input type="text" id="city" name="city" class="form-control" placeholder="Ví dụ: Hà Nội, TP.HCM" value="@Model?.City?.Name" />
+        </div>
+
+        <!-- Nút gửi yêu cầu -->
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">Xem Dự báo 5 ngày</button>
+        </div>
+    </form>
+
+    <!-- Hiển thị lỗi nếu có -->
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger mt-3">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+
+    <!-- Hiển thị kết quả nếu có -->
+    @if (Model != null)
+    {
+        <div class="container mt-4">
+            <!-- Title -->
+            <h2 class="text-center text-primary mb-4">
+                Dự Báo Thời Tiết - @Model.City.Name, @Model.City.Country
+            </h2>
+
+            <!-- Weather Table -->
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered shadow-sm">
+                    <thead class="table-dark">
+                        <tr class="text-center">
+                            <th>Ngày</th>
+                            <th>Nhiệt Độ (°C)</th>
+                            <th>Mô Tả Thời Tiết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var forecast in Model.List.Take(40))
+                        {
+                            <tr class="text-center align-middle">
+                                <td>@DateTimeOffset.FromUnixTimeSeconds(forecast.Dt).ToString("dd-MM-yyyy")</td>
+                                <td>@forecast.Main.Temp</td>
+                                <td>@forecast.Weather[0].Description</td>  <!-- Mô tả thời tiết đã được dịch ở controller -->
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Disease Risk Alerts -->
+            <div class="mt-5">
+                <h4 class="text-danger mb-3">Cảnh Báo Dịch Bệnh</h4>
+                <ul class="list-group shadow">
+                    @foreach (var risk in ViewBag.DiseaseRisks as List<string>)
+                    {
+                        @if (risk.Contains("Điều kiện thời tiết bình thường, nguy cơ dịch bệnh thấp."))
+                        {
+                            <!-- Nếu thông báo là bình thường -->
+                            <li class="list-group-item">
+                                <i class="bi bi-info-circle text-success"></i>
+                                @risk
+                            </li>
+                        }
+                        else
+                        {
+                            <!-- Nếu có cảnh báo dịch bệnh -->
+                            <li class="list-group-item list-group-item-warning">
+                                <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                                @risk
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center mt-4">
+                <a asp-action="Index" class="btn btn-outline-primary px-4">
+                    <i class="bi bi-arrow-left-circle"></i> Dự Báo Lại
+                </a>
+            </div>
+        </div>
+    }
+</div>

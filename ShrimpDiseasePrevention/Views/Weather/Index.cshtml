@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Dự báo thời tiết";
+}
+
+<div class="container" style="margin-top: 100px;">
+    <h1 class="mb-4 text-center">Dự báo Thời tiết</h1>
+
+    <!-- Form để nhập tên tỉnh/thành phố -->
+    <form asp-action="Forecast" method="post" class="card p-4 shadow-sm">
+        <div class="form-group">
+            <label for="city" class="form-label">Nhập tên tỉnh/thành phố:</label>
+            <input type="text" id="city" name="city" class="form-control" placeholder="Ví dụ: Hà Nội, TP.HCM" />
+        </div>
+
+        <!-- Nút gửi yêu cầu -->
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">Xem Dự báo 5 ngày</button>
+        </div>
+    </form>
+
+    <!-- Hiển thị lỗi nếu có -->
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger mt-3">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+</div>

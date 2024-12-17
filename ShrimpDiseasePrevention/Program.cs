@@ -1,5 +1,6 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ShrimpDiseasePrevention.Models;
+using ShrimpDiseasePrevention.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,9 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+builder.Services.AddHttpClient<WeatherService>();
+builder.Services.AddScoped<DiseaseRiskService>();
 
 var app = builder.Build();
 
