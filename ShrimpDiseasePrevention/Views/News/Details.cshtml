@@ -2,64 +2,69 @@
     var newsDetails = ViewBag.NewsDetails as ShrimpDiseasePrevention.Models.News;
     var images = ViewBag.Images as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
     var userFullName = ViewBag.UserFullName as string;
+    int? roleId = Context.Session.GetInt32("RoleId");
 }
 <link rel="stylesheet" href="/css/details.css" asp-append-version="true" />
 
-<div class="container mt-5 news-main">
+<div class="container news-main" style="margin-top: 110px !important;">
     <!-- Title -->
-    <h1 class="article-title text-center">@newsDetails.NewsTitle</h1>
+    <h1 class="article-title text-center fw-bold">@newsDetails?.NewsTitle</h1>
 
     <!-- Metadata -->
-    <div class="d-flex justify-content-center article-meta mb-3">
-        <span class="me-4">
-            Tác giả:
-            <strong>
-                <i>@userFullName</i>
-            </strong>
+    <div class="d-flex justify-content-center align-items-center article-meta mb-4">
+        <span class="me-4 text-muted">
+            <i class="bi bi-person-circle me-1"></i>
+            Tác giả: <strong>@userFullName</strong>
         </span>
-        <span>Ngày tạo: @newsDetails.NewsCreateAt</span>
+        <span class="text-muted">
+            <i class="bi bi-calendar-event me-1"></i>
+            Ngày tạo: <strong>@newsDetails.NewsCreateAt.ToString()</strong>
+        </span>
     </div>
-
+    @if (!string.IsNullOrEmpty(newsDetails.NewsShortDescription))
+    {
+        <div class="text-center">
+            <strong class="text-dark mt-3">
+                <i>
+                    @newsDetails.NewsShortDescription
+                </i>
+            </strong>
+        </div>
+    }
     <!-- Content -->
-    <div class="article-content">
-        <p class="container">
+    <div class="article-content my-5">
+        <p class="text-justify">
             @newsDetails.NewsContent
         </p>
     </div>
 
-    <!-- Image -->
+    <!-- Image Section -->
     <div class="image-description text-center mb-5">
         @if (images != null && images.Any())
         {
             foreach (var image in images)
             {
-                <img src="@image.ImagePath" alt="Image" class="img-fluid rounded">
-                @if (newsDetails.NewsShortDescription != null)
-                {
-                    <p class="text-center mt-4" style="font-size: 13px;">
-                        <i>
-                            @newsDetails.NewsShortDescription
-                        </i>
-                    </p>
-                }
+                <div class="news-image-container mb-4">
+                    <img src="@image.ImagePath" alt="News Image" class="img-fluid rounded shadow-lg">
+                </div>
             }
         }
         else
         {
-            <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
-            </div>
+            <p class="text-muted text-center mt-5">Không có hình ảnh nào được tải lên.</p>
         }
     </div>
 
-    <!-- Edit Button -->
-    <div class="text-center mt-4">
-        <a href="/News/EditNews/@newsDetails.NewsId" class="btn btn-primary">
-            Chỉnh sửa bài viết
-        </a>
-    </div>
-    <div class="text-center mt-4">
-        <a href="/News/DeleteNews/@newsDetails.NewsId" class="btn btn-danger">
-            Xóa bài viết
-        </a>
-    </div>
+    <!-- Edit and Delete buttons (only for admin) -->
+    @if (roleId == 1)
+    {
+        <div class="text-center mt-5">
+            <a href="/News/EditNews/@newsDetails.NewsId" class="btn btn-primary btn-lg me-3">
+                <i class="fas fa-edit me-1"></i> Chỉnh sửa bài viết
+            </a>
+            <a href="/News/DeleteNews/@newsDetails.NewsId" class="btn btn-danger btn-lg">
+                <i class="fas fa-trash-alt me-1"></i> Xóa bài viết
+            </a>
+        </div>
+    }
 </div>

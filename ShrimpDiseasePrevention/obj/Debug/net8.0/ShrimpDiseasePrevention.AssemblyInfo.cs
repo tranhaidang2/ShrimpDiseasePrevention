@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShrimpDiseasePrevention")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7b807bb4d0c5d407fd408ee1f8402c00d3ed3c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18c9ce36220f720bf7b1fa450a1eb28e39e50053")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShrimpDiseasePrevention")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShrimpDiseasePrevention")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

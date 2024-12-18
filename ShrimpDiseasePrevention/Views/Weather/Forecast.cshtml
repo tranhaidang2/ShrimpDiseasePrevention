@@ -5,8 +5,6 @@
 }
 
 <div class="container" style="margin-top: 100px;">
-    <h1 class="mb-4 text-center">Dự báo Thời tiết</h1>
-
     <!-- Form để nhập tên tỉnh/thành phố -->
     <form asp-action="Forecast" method="post" class="card p-4 shadow-sm">
         <div class="form-group">
@@ -36,8 +34,8 @@
     {
         <div class="container mt-4">
             <!-- Title -->
-            <h2 class="text-center text-primary mb-4">
-                Dự Báo Thời Tiết - @Model.City.Name, @Model.City.Country
+            <h2 class="text-center text-dark mb-4">
+                @Model.City.Name, @Model.City.Country trong 5 ngày tới
             </h2>
 
             <!-- Weather Table -->
@@ -47,21 +45,35 @@
                         <tr class="text-center">
                             <th>Ngày</th>
                             <th>Nhiệt Độ (°C)</th>
-                            <th>Mô Tả Thời Tiết</th>
+                            <th>Độ Ẩm (%)</th>
+                            <th>Áp Suất (hPa)</th>
+                            <th>Mây (%)</th>
+                            <th>Gió (m/s)</th>
+                            <th>Tầm Nhìn (m)</th>
+                            <th>Xác Suất Mưa (%)</th>
+                            <th>Mô Tả</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var forecast in Model.List.Take(40))
                         {
                             <tr class="text-center align-middle">
-                                <td>@DateTimeOffset.FromUnixTimeSeconds(forecast.Dt).ToString("dd-MM-yyyy")</td>
+                                <td>@DateTimeOffset.FromUnixTimeSeconds(forecast.Dt).ToString("dd-MM-yyyy HH:mm")</td>
                                 <td>@forecast.Main.Temp</td>
-                                <td>@forecast.Weather[0].Description</td>  <!-- Mô tả thời tiết đã được dịch ở controller -->
+                                <td>@forecast.Main.Humidity</td>
+                                <td>@forecast.Main.Pressure</td>
+                                <td>@forecast.Clouds.All</td>
+                                <td>@forecast.Wind.Speed</td>
+                                <td>@forecast.Visibility</td>
+                                <td>@(forecast.Pop * 100)%</td>
+                                <td>@forecast.Weather[0].Description</td>
                             </tr>
                         }
                     </tbody>
                 </table>
+
             </div>
+
 
             <!-- Disease Risk Alerts -->
             <div class="mt-5">

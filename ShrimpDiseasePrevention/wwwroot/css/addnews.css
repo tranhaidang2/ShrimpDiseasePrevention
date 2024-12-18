@@ -66,14 +66,12 @@ form {
         font-family: var(--nav-font);
     }
 
-    /* File upload styling */
     .form-group input[type="file"] {
         padding: 5px;
         font-size: 14px;
         background-color: var(--new-contrast-color);
     }
 
-/* Submit button styling */
 button[type="submit"] {
     display: block;
     width: 100%;

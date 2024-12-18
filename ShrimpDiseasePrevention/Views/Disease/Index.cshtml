@@ -63,7 +63,7 @@
                                     {
                                         <img src="/img/no-image-submit.jpg" class="img-fluid" alt="Image related to the news article">
                                     }
-                                    <span class="post-date">@disease.DiseaseCreateAt.ToString()</span>
+                                    <span class="post-date">@Html.Raw(disease.DiseaseCreateAt?.ToString("dd/MM/yyyy"))</span>
                                 </div>
 
                                 <div class="post-content d-flex flex-column">

@@ -4,117 +4,101 @@
     var preventionDetails = ViewBag.PreventionDetails as ShrimpDiseasePrevention.Models.Prevention;
     var preventionImages = ViewBag.PreventionImages as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
     var userFullName = ViewBag.UserFullName as string;
+    int? roleId = Context.Session.GetInt32("RoleId");
+
 }
 <link rel="stylesheet" href="/css/details.css" asp-append-version="true" />
 
-<div class="container mt-5 disease-main">
+<div class="container news-main" style="margin-top: 110px !important;">
     <!-- Title -->
-    <h1 class="article-title text-center">@diseaseDetails.DiseaseTitle</h1>
+    <h1 class="article-title text-center fw-bold">@diseaseDetails?.DiseaseTitle</h1>
 
     <!-- Metadata -->
-    <div class="d-flex justify-content-center article-meta mb-3">
-        <span class="me-4">
-            Tác giả:
-            <strong>
-                <i>@userFullName</i>
-            </strong>
+    <div class="d-flex justify-content-center align-items-center article-meta mb-4">
+        <span class="me-4 text-muted">
+            <i class="bi bi-person-circle me-1"></i>
+            Tác giả: <strong>@userFullName</strong>
         </span>
-        <span>Ngày tạo: @diseaseDetails.DiseaseCreateAt</span>
+        <span class="text-muted">
+            <i class="bi bi-calendar-event me-1"></i>
+            Ngày tạo: <strong>@diseaseDetails.DiseaseCreateAt.ToString()</strong>
+        </span>
     </div>
 
+    @if (!string.IsNullOrEmpty(diseaseDetails.DiseaseShortDescription))
+    {
+        <div class="text-center">
+            <strong class="text-dark mt-3">
+                <i>
+                    @diseaseDetails.DiseaseShortDescription
+                </i>
+            </strong>
+        </div>
+    }
     <!-- Content -->
-    <div class="article-content">
-        <h4>Triệu chứng</h4>
-        <p class="container">
-            @diseaseDetails.DiseaseSymptoms
-        </p>
-
-        <h4>Chi tiết bệnh</h4>
-        <p class="container">
+    <div class="article-content my-5">
+        <p class="text-justify">
             @diseaseDetails.DiseaseContent
         </p>
     </div>
 
-    <!-- Image -->
+    <!-- Image Section -->
     <div class="image-description text-center mb-5">
         @if (images != null && images.Any())
         {
             foreach (var image in images)
             {
-                <img src="@image.ImagePath" alt="Disease Image" class="img-fluid rounded mb-3" />
-                @if (diseaseDetails.DiseaseShortDescription != null)
-                {
-                    <p class="text-center mt-4" style="font-size: 13px;">
-                        <i>@diseaseDetails.DiseaseShortDescription</i>
-                    </p>
-                }
+                <div class="news-image-container mb-4">
+                    <img src="@image.ImagePath" alt="News Image" class="img-fluid rounded shadow-lg">
+                </div>
             }
         }
         else
         {
-            <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
-                <p>Không có hình ảnh được đính kèm.</p>
-            </div>
+            <p class="text-muted text-center mt-5">Không có hình ảnh nào được tải lên.</p>
         }
     </div>
+    @if (diseaseDetails.Preventions != null && diseaseDetails.Preventions.Any())
+    {
+        <h4>Cách phòng ngừa</h4>
+        <ul>
+            @foreach (var prevention in diseaseDetails.Preventions)
+            {
+                <li>@prevention.PreventionContent</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p hidden></p>
+    }
 
-    <!-- Prevention -->
-    <div class="prevention-section mt-4">
-        @if (diseaseDetails.Preventions != null && diseaseDetails.Preventions.Any())
-        {
-            <h4>Phòng ngừa</h4>
-            <ul>
-                @foreach (var prevention in diseaseDetails.Preventions)
-                {
-                    <li>@prevention.PreventionContent</li>
-                }
-            </ul>
-        }
-        else
-        {
-            <h4>Phòng ngừa</h4>
-            <p>Không có thông tin phòng ngừa.</p>
-        }
-    </div>
-    <div class="form-group">
-        <label for="PreventionContent">Phương pháp phòng chống</label>
-        <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3">
-            @preventionDetails?.PreventionContent
-            </textarea>
-    </div>
-
-    <div class="form-group">
-        <label for="PreventionImages">Ảnh đính kèm</label>
+    <div class="image-description text-center mb-5">
         @if (preventionImages != null && preventionImages.Any())
         {
-            <div class="d-flex justify-content-center flex-wrap image-container">
-                @foreach (var image in preventionImages)
-                {
-                    <div class="image-wrapper">
-                        <img src="@image.ImagePath" alt="Prevention Image" class="img-fluid rounded">
-                    </div>
-                }
-            </div>
+            foreach (var image in preventionImages)
+            {
+                <div class="news-image-container mb-4">
+                    <img src="@image.ImagePath" alt="News Image" class="img-fluid rounded shadow-lg">
+                </div>
+            }
         }
         else
         {
-            <p hidden>Không có ảnh</p>
+            <p class="text-muted text-center mt-5">Không có hình ảnh nào được tải lên.</p>
         }
     </div>
+    <!-- Edit and Delete buttons (only for admin) -->
+    @if (roleId == 1)
+    {
+        <div class="text-center mt-5">
+            <a href="/Disease/EditDisease/@diseaseDetails.DiseaseId" class="btn btn-primary btn-lg me-3">
+                <i class="fas fa-edit me-1"></i> Chỉnh sửa bài viết
+            </a>
+            <a href="/Disease/DeleteDisease/@diseaseDetails.DiseaseId" class="btn btn-danger btn-lg">
+                <i class="fas fa-trash-alt me-1"></i> Xóa bài viết
+            </a>
+        </div>
+    }
 
-    <div class="form-group">
-        <label for="PreventionImageFiles">Ảnh mới</label>
-        <input type="file" class="form-control" id="PreventionImageFiles" name="PreventionImageFiles" accept="image/*" multiple />
-    </div>
-    <!-- Edit Button -->
-    <div class="text-center mt-4">
-        <a href="/Disease/EditDisease/@diseaseDetails.DiseaseId" class="btn btn-primary">
-            Chỉnh sửa thông tin
-        </a>
-    </div>
-    <div class="text-center mt-4">
-        <a href="@Url.Action("DeleteDisease", "Disease", new { id = diseaseDetails.DiseaseId })" class="readmore stretched-link">
-            Xóa
-        </a>
-    </div>
 </div>

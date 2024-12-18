@@ -1,34 +1,41 @@
 ﻿
-<link rel="stylesheet" href="~/css/addnews.css" />
+<link rel="stylesheet" href="~/css/addnews.css" asp-append-version="true" />
 
 <div class="container mt-5">
-
     <form method="post" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="NewsTitle">Tiêu đề</label>
-            <input type="text" class="form-control" id="NewsTitle" name="NewsTitle" required placeholder="Nhập tiêu đề bài viết (tối đa 255 kí tự)"/>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="NewsTitle">Tiêu đề</label>
+                <input type="text" class="form-control" id="NewsTitle" name="NewsTitle" required placeholder="Nhập tiêu đề bài viết (tối đa 255 kí tự)" />
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="NewsShortDescription">Mô tả</label>
-            <textarea class="form-control" id="NewsShortDescription" name="NewsShortDescription" rows="3" required placeholder="Nhập mô tả tin tức (tối đa 255 kí tự)"></textarea>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="NewsShortDescription">Mô tả</label>
+                <textarea class="form-control" id="NewsShortDescription" name="NewsShortDescription" rows="3" required placeholder="Nhập mô tả tin tức (tối đa 255 kí tự)"></textarea>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="NewsContent">Nội dung</label>
-            <textarea class="form-control" id="NewsContent" name="NewsContent" rows="5" required placeholder="Nhập nội dung tin tức"></textarea>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="NewsContent">Nội dung</label>
+                <textarea class="form-control" id="NewsContent" name="NewsContent" rows="5" required placeholder="Nhập nội dung tin tức"></textarea>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="ImageFiles">Ảnh đính kèm</label>
-            <input type="file" class="form-control" id="ImageFiles" name="ImageFiles" accept="image/*" multiple />
+        <div class="form-section">
+            <div class="form-group">
+                <label for="ImageFiles">Ảnh đính kèm</label>
+                <input type="file" class="form-control" id="ImageFiles" name="ImageFiles" accept="image/*" multiple />
+            </div>
         </div>
 
-
-        <button type="submit" class="btn btn-primary">Thêm tin tức</button>
+        <div class="form-section text-center">
+            <button type="submit" class="btn btn-primary">Thêm tin tức</button>
+        </div>
     </form>
 </div>
-
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const newsTitle = document.getElementById("NewsTitle");

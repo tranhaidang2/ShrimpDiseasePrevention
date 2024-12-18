@@ -46,13 +46,14 @@ namespace ShrimpDiseasePrevention.Controllers
             {
                 return View(model);
             }
+            var userId = HttpContext.Session.GetInt32("UserId");
 
             var post = new Post
             {
                 PostTitle = model.PostTitle,
                 PostContent = model.PostContent,
                 PostCreateAt = DateTime.Now,
-                UserId = model.UserId
+                UserId = userId
             };
 
             _context.Posts.Add(post);

@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cnh13i7nta</Fingerprint>
-      <Integrity>aFV8HGUevLzFCvvtBkjeOJFpIyFKiQNgNCMJ2tccu10=</Integrity>
+      <Fingerprint>j779cppd6t</Fingerprint>
+      <Integrity>v+zvcNBJMLhCbUzeqEpwnTopx/5y+OJj+KI5qV1OE6A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\addnews.css'))</OriginalItemSpec>
@@ -642,8 +642,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r0xthiwlh0</Fingerprint>
-      <Integrity>lToZ1CyDwaj76XQFGTn73oUlAx1Ol4e0G2SMkZICRnA=</Integrity>
+      <Fingerprint>sda7psczbz</Fingerprint>
+      <Integrity>sKYBnrjl407sLDTmfX8mcQ3JKsgvLkJCHoVrFC9N8SU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\details.css'))</OriginalItemSpec>
@@ -660,8 +660,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cyziqwfegh</Fingerprint>
-      <Integrity>fC/2wOv0gc/CexAu2fYR6M/kp0Ig9A30HViMNSRFqqE=</Integrity>
+      <Fingerprint>2ohhwbrojn</Fingerprint>
+      <Integrity>TrCuqS7fVvueWI+X39giOXH1MGAvbA/c1q6I6fqgDt8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\news.css'))</OriginalItemSpec>
@@ -678,8 +678,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>eq2bqwjprp</Fingerprint>
-      <Integrity>atNH/y9pTBLo7wqD+OjSs/xXBtJ+f2+ljd4pT9qMgpI=</Integrity>
+      <Fingerprint>y25vd0d7ah</Fingerprint>
+      <Integrity>hhc32k9IS+P49McXB6N1XVJ3B/Qoko/6qtcAlncsE9Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post.css'))</OriginalItemSpec>
@@ -719,6 +719,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DiseaseImage\11\11_backgeound.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShrimpDiseasePrevention</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShrimpDiseasePrevention</BasePath>
+      <RelativePath>DiseaseImage/11/11_backgeound.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xq5rh2y057</Fingerprint>
+      <Integrity>J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DiseaseImage\11\11_backgeound.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>
@@ -2609,6 +2627,60 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\swiper\swiper-bundle.min.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewImage\18\domtrang.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShrimpDiseasePrevention</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShrimpDiseasePrevention</BasePath>
+      <RelativePath>NewImage/18/domtrang.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>w4r6bs1hga</Fingerprint>
+      <Integrity>4PmhDBtk3/pS+uxqtSGaSMh4TB+hIBW9LLLd0IljfJc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewImage\18\domtrang.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PostImage\12\about1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShrimpDiseasePrevention</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShrimpDiseasePrevention</BasePath>
+      <RelativePath>PostImage/12/about1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bsy0g2usur</Fingerprint>
+      <Integrity>G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PostImage\12\about1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PreventionImage\11\11_hoaitu.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShrimpDiseasePrevention</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShrimpDiseasePrevention</BasePath>
+      <RelativePath>PreventionImage/11/11_hoaitu.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>d03h3ki2em</Fingerprint>
+      <Integrity>fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PreventionImage\11\11_hoaitu.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShrimpDiseasePrevention.t0bqlsr4j1.bundle.scp.css'))">
       <SourceType>Package</SourceType>

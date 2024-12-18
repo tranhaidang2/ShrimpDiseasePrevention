@@ -6,10 +6,102 @@
     var userFullName = ViewBag.UserFullName as string;
 }
 
-
-<link rel="stylesheet" href="~/css/adddisease.css" />
-
 <style>
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Nunito", sans-serif;
+    --nav-font: "Inter", sans-serif;
+    --background-color: #ffffff;
+    --default-color: #3d4348;
+    --heading-color: #3e5055;
+    --accent-color: #388da8;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    --new-contrast-color: #D1FAE5;
+    --new-dark-contract-font: #060606;
+    --new-background-color: #e1f5fe;
+}
+
+/* General form styles */
+form {
+    width: 100%;
+    margin: 110px 0 0 0;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: ghostwhite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: var(--default-font);
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+    /* Input and textarea styling */
+    .form-group input[type="text"],
+    .form-group textarea,
+    .form-group input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid var(--accent-color);
+        border-radius: 5px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        background-color: var(--contrast-color);
+        color: var(--default-color);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        /* Focus effect for inputs and textarea */
+        .form-group input[type="text"]:focus,
+        .form-group textarea:focus,
+        .form-group input[type="file"]:focus {
+            border-color: var(--new-dark-contract-font);
+            box-shadow: 0 0 6px rgba(56, 141, 168, 0.5);
+            outline: none;
+        }
+
+    /* Label styling */
+    .form-group label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+        color: var(--heading-color);
+        font-family: var(--nav-font);
+    }
+
+    .form-group input[type="file"] {
+        padding: 5px;
+        font-size: 14px;
+        background-color: var(--new-contrast-color);
+    }
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: var(--nav-font);
+}
+
+    button[type="submit"]:hover {
+        background-color: var(--new-dark-contract-font);
+        transform: translateY(-2px);
+        color: var(--new-contrast-color);
+    }
+
+
+
     .image-container {
         display: flex;
         flex-wrap: wrap;
@@ -31,7 +123,6 @@
 </style>
 
 <div class="container mt-5">
-
     <form method="post" enctype="multipart/form-data" asp-action="EditDisease" asp-controller="Disease">
         <input type="hidden" name="DiseaseId" value="@diseaseDetails.DiseaseId" />
 
@@ -59,16 +150,19 @@
             <label for="ImageFiles">Ảnh đính kèm</label>
             @if (diseaseImages != null && diseaseImages.Any())
             {
-                foreach (var image in diseaseImages)
-                {
-                    <img src="@image.ImagePath" alt="Disease Image" />
-                }
+                <div class="d-flex justify-content-center flex-wrap image-container">
+                    @foreach (var image in diseaseImages)
+                    {
+                        <div class="image-wrapper">
+                            <img src="@image.ImagePath" alt="Disease Image" class="img-fluid rounded">
+                        </div>
+                    }
+                </div>
             }
             else
             {
-                <p>No disease images found.</p>
+                <p hidden>Không có ảnh</p>
             }
-
         </div>
 
         <div class="form-group">
@@ -78,9 +172,7 @@
 
         <div class="form-group">
             <label for="PreventionContent">Phương pháp phòng chống</label>
-            <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3">
-                @preventionDetails?.PreventionContent
-            </textarea>
+            <textarea class="form-control" id="PreventionContent" name="PreventionContent" rows="3" required>@preventionDetails?.PreventionContent</textarea>
         </div>
 
         <div class="form-group">
@@ -107,7 +199,6 @@
             <input type="file" class="form-control" id="PreventionImageFiles" name="PreventionImageFiles" accept="image/*" multiple />
         </div>
 
-
         <button type="submit" class="btn btn-primary">Sửa</button>
     </form>
 </div>
@@ -119,8 +210,6 @@
         const diseaseContent = document.getElementById("DiseaseContent");
         const diseaseSymptoms = document.getElementById("DiseaseSymptoms");
         const preventionContent = document.getElementById("PreventionContent");
-
-
 
         diseaseTitle.oninvalid = function () {
             if (this.validity.valueMissing) {

@@ -6,7 +6,7 @@
         public string NewsTitle { get; set; } = null!;
         public string NewsContent { get; set; } = null!;
         public string? NewsShortDescription { get; set; }
-        public DateTime? NewsCreateAt { get; set; }
+        public DateTime NewsCreateAt { get; set; }
         public int? UserId { get; internal set; }
         public string? UserFullName { get; set; }
 
