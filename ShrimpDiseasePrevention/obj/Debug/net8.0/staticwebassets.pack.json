@@ -193,6 +193,10 @@
       "PackagePath": "staticwebassets\\PostImage\\12\\about1.jpg"
     },
     {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PostImage\\14\\backgeound.jpg",
+      "PackagePath": "staticwebassets\\PostImage\\14\\backgeound.jpg"
+    },
+    {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PreventionImage\\11\\11_hoaitu.jpg",
       "PackagePath": "staticwebassets\\PreventionImage\\11\\11_hoaitu.jpg"
     },
@@ -219,6 +223,14 @@
     {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
       "PackagePath": "staticwebassets\\css\\post.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
+      "PackagePath": "staticwebassets\\css\\post_details.css"
+    },
+    {
+      "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
     },
     {
       "Id": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\section.css",

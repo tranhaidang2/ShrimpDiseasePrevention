@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5HaUmCSGWCc+0cXlTOCsxavR90FxyUfI4AAowOjgio0=",
+  "Hash": "5/QtmugCNpvThioOcV4klMPsZ14w/pHJBsxIDqYJL+s=",
   "Source": "ShrimpDiseasePrevention",
   "BasePath": "_content/ShrimpDiseasePrevention",
   "Mode": "Default",
@@ -1102,11 +1102,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "y25vd0d7ah",
-      "Integrity": "hhc32k9IS+P49McXB6N1XVJ3B/Qoko/6qtcAlncsE9Y=",
+      "Fingerprint": "a4uaj2qzg9",
+      "Integrity": "Bq79T9lMRgitjnA3dxZXbLFawtgq5IvhMJfwyAwo3cI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post.css"
+    },
+    {
+      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
+      "SourceId": "ShrimpDiseasePrevention",
+      "SourceType": "Discovered",
+      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
+      "BasePath": "_content/ShrimpDiseasePrevention",
+      "RelativePath": "css/post_details#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k6o0veh53h",
+      "Integrity": "bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\post_details.css"
+    },
+    {
+      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+      "SourceId": "ShrimpDiseasePrevention",
+      "SourceType": "Discovered",
+      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
+      "BasePath": "_content/ShrimpDiseasePrevention",
+      "RelativePath": "css/profile#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q5mtjzmfqy",
+      "Integrity": "bpRD5xhpjbtj470KEKVy2E5UWOPF/kgR/TcpY8H7vm8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
       "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\section.css",
@@ -3165,6 +3207,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PostImage\\12\\about1.jpg"
+    },
+    {
+      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PostImage\\14\\backgeound.jpg",
+      "SourceId": "ShrimpDiseasePrevention",
+      "SourceType": "Discovered",
+      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
+      "BasePath": "_content/ShrimpDiseasePrevention",
+      "RelativePath": "PostImage/14/backgeound#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xq5rh2y057",
+      "Integrity": "J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PostImage\\14\\backgeound.jpg"
     },
     {
       "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PreventionImage\\11\\11_hoaitu.jpg",
@@ -6224,6 +6287,51 @@
       ]
     },
     {
+      "Route": "css/post.a4uaj2qzg9.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bq79T9lMRgitjnA3dxZXbLFawtgq5IvhMJfwyAwo3cI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 15:45:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a4uaj2qzg9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/post.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bq79T9lMRgitjnA3dxZXbLFawtgq5IvhMJfwyAwo3cI="
+        }
+      ]
+    },
+    {
       "Route": "css/post.css",
       "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
       "Selectors": [],
@@ -6234,7 +6342,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3567"
+          "Value": "3407"
         },
         {
           "Name": "Content-Type",
@@ -6242,11 +6350,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hhc32k9IS+P49McXB6N1XVJ3B/Qoko/6qtcAlncsE9Y=\""
+          "Value": "\"Bq79T9lMRgitjnA3dxZXbLFawtgq5IvhMJfwyAwo3cI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 17:28:09 GMT"
+          "Value": "Thu, 19 Dec 2024 15:45:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6256,13 +6364,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hhc32k9IS+P49McXB6N1XVJ3B/Qoko/6qtcAlncsE9Y="
+          "Value": "sha256-Bq79T9lMRgitjnA3dxZXbLFawtgq5IvhMJfwyAwo3cI="
         }
       ]
     },
     {
-      "Route": "css/post.y25vd0d7ah.css",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
+      "Route": "css/post_details.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6271,7 +6379,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3567"
+          "Value": "2581"
         },
         {
           "Name": "Content-Type",
@@ -6279,11 +6387,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hhc32k9IS+P49McXB6N1XVJ3B/Qoko/6qtcAlncsE9Y=\""
+          "Value": "\"bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 17:28:09 GMT"
+          "Value": "Thu, 19 Dec 2024 16:14:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/post_details.k6o0veh53h.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 16:14:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6293,15 +6438,97 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y25vd0d7ah"
+          "Value": "k6o0veh53h"
         },
         {
           "Name": "label",
-          "Value": "css/post.css"
+          "Value": "css/post_details.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hhc32k9IS+P49McXB6N1XVJ3B/Qoko/6qtcAlncsE9Y="
+          "Value": "sha256-bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/profile.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bpRD5xhpjbtj470KEKVy2E5UWOPF/kgR/TcpY8H7vm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 16:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bpRD5xhpjbtj470KEKVy2E5UWOPF/kgR/TcpY8H7vm8="
+        }
+      ]
+    },
+    {
+      "Route": "css/profile.q5mtjzmfqy.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bpRD5xhpjbtj470KEKVy2E5UWOPF/kgR/TcpY8H7vm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 16:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q5mtjzmfqy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/profile.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bpRD5xhpjbtj470KEKVy2E5UWOPF/kgR/TcpY8H7vm8="
         }
       ]
     },
@@ -15322,6 +15549,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI="
+        }
+      ]
+    },
+    {
+      "Route": "PostImage/14/backgeound.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PostImage\\14\\backgeound.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 16:12:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac="
+        }
+      ]
+    },
+    {
+      "Route": "PostImage/14/backgeound.xq5rh2y057.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PostImage\\14\\backgeound.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 16:12:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xq5rh2y057"
+        },
+        {
+          "Name": "label",
+          "Value": "PostImage/14/backgeound.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac="
         }
       ]
     },

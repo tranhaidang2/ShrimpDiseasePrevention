@@ -4,53 +4,69 @@
     ViewData["Title"] = "Chi tiết bài viết";
 }
 
-<h1>@Model.PostTitle</h1>
-<p>@Model.PostContent</p>
-<p><strong>Ngày tạo:</strong> @Model.PostCreateAt?.ToString("dd/MM/yyyy")</p>
+<link rel="stylesheet" href="/css/post_details.css" />
 
-<!-- Hiển thị ảnh liên quan đến bài viết -->
-@if (Model.Images.Any())
-{
-    <div class="post-images">
-        @foreach (var image in Model.Images)
-        {
-            <img src="@image.ImagePath" alt="Post image" class="post-image" />
-        }
+<div class="container post-details">
+    <!-- Tiêu đề bài viết -->
+    <h1 class="post-title text-center">@Model.PostTitle</h1>
+    <p class="post-date text-center"><strong>Ngày tạo:</strong> @Model.PostCreateAt?.ToString("dd/MM/yyyy")</p>
+    <p class="post-date text-center"><strong>Người đăng</strong>@Model.User?.UserFullName</p>
+
+    <!-- Nội dung bài viết -->
+    <div class="post-content">
+        <p>@Model.PostContent</p>
     </div>
-}
 
-<h3>Comments</h3>
-@if (Model.Comments.Any())
-{
-    <ul class="comments-list">
-        @foreach (var comment in Model.Comments)
-        {
-            <li>
-                <p><strong>@comment.User.UserName</strong> (<em>@comment.CommentCreateAt?.ToString("dd/MM/yyyy")</em>):</p>
-                <p>@comment.CommentContent</p>
+    <!-- Hình ảnh liên quan -->
+    @if (Model.Images.Any())
+    {
+        <div class="post-images">
+            @foreach (var image in Model.Images)
+            {
+                <div class="image-wrapper">
+                    <img src="@image.ImagePath" alt="Post image" class="post-image" />
+                </div>
+            }
+        </div>
+    }
 
-                <!-- Nút xóa comment chỉ hiển thị nếu người dùng là chủ sở hữu hoặc admin -->
-                @if (comment.UserId == Context.Session.GetInt32("UserId") || User.IsInRole("Admin"))
-                {
-                    <form method="post" action="@Url.Action("DeleteComment", "Post")" style="display:inline;">
-                        @Html.AntiForgeryToken()
-                        <input type="hidden" name="commentId" value="@comment.CommentId" />
-                        <button type="submit" class="btn btn-danger">Xóa</button>
-                    </form>
-                }
-            </li>
-        }
-    </ul>
-}
-else
-{
-    <p>Không có bình luận nào.</p>
-}
+    <!-- Phần bình luận -->
+    <h3 class="comments-title">Bình luận</h3>
+    @if (Model.Comments.Any())
+    {
+        <ul class="comments-list">
+            @foreach (var comment in Model.Comments)
+            {
+                <li class="comment-item">
+                    <div class="comment-header">
+                        <strong class="comment-user">@comment.User.UserName</strong>
+                        <em class="comment-date">(@comment.CommentCreateAt?.ToString("dd/MM/yyyy"))</em>
+                    </div>
+                    <p class="comment-content">@comment.CommentContent</p>
 
-<!-- Form thêm comment -->
-<h3>Thêm bình luận</h3>
-<form method="post" action="@Url.Action("AddComment", "Post")">
-    <input type="hidden" name="PostId" value="@Model.PostId" />
-    <textarea name="CommentContent" rows="4" placeholder="Viết bình luận của bạn..." required></textarea>
-    <button type="submit">Gửi bình luận</button>
-</form>
+                    <!-- Nút xóa bình luận -->
+                    @if (comment.UserId == Context.Session.GetInt32("UserId") || User.IsInRole("Admin"))
+                    {
+                        <form method="post" action="@Url.Action("DeleteComment", "Post")" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="commentId" value="@comment.CommentId" />
+                            <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                        </form>
+                    }
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p class="no-comments">Không có bình luận nào.</p>
+    }
+
+    <!-- Form thêm bình luận -->
+    <h3 class="add-comment-title">Thêm bình luận</h3>
+    <form method="post" action="@Url.Action("AddComment", "Post")" class="add-comment-form">
+        <input type="hidden" name="PostId" value="@Model.PostId" />
+        <textarea name="CommentContent" rows="4" placeholder="Viết bình luận của bạn..." required></textarea>
+        <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+    </form>
+</div>

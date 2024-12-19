@@ -1,163 +1,144 @@
-﻿/* Style chung cho blog */
-.post_list {
-    margin-top: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    padding: 20px 0;
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Nunito:wght@200;300;400;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Nunito", sans-serif;
+    --nav-font: "Inter", sans-serif;
+    --background-color: #ffffff;
+    --default-color: #3d4348;
+    --heading-color: #3e5055;
+    --accent-color: #388da8;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    --new-background-color: #e1f5fe;
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-/* Mỗi bài viết */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
 .post {
-    background-color: #ffffff;
-    border-radius: 12px;
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
     overflow: hidden;
-    width: 100%;
-    max-width: 850px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
     .post:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
-/* Header bài viết (hình ảnh, user) */
 .post-header {
-    position: relative;
-}
-
-    .post-header img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-
-.post-user {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    font-weight: 500;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Nội dung bài viết */
-.post-body {
-    padding: 20px 30px;
-}
-
-.post-title {
-    font-family: 'Merriweather', serif;
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #333333;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    transition: color 0.3s ease;
-}
-
-    .post-title:hover {
-        color: #007bff;
-    }
-
-.post-content {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #555555;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* Footer bài viết */
-.post-actions {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    border-top: 1px solid #f0f0f0;
-    background: #fafafa;
 }
 
-    .post-actions a {
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.95em;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 10px 20px;
-        background-color: #007bff;
-        border-radius: 50px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
+.user-name {
+    font-weight: 600;
+    font-family: var(--nav-font);
 
-        .post-actions a:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
+}
 
-    .post-actions button {
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.95em;
-        color: #ffffff;
-        padding: 10px 20px;
-        background-color: #dc3545;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
+.post_list {
+    margin-top: 110px;
+}
 
-        .post-actions button:hover {
-            background-color: #a71d2a;
-            transform: scale(1.05);
-        }
-
-/* Ngày tạo bài viết */
 .post-date {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.85em;
-    color: #888888;
-    margin-top: 10px;
-    display: block;
+    font-size: 0.9rem;
+    color: var(--contrast-color);
+    opacity: 0.8;
+}
+
+.post-body {
+    padding: 15px;
+}
+
+.post-title {
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--default-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.8em; /* Display 3 lines of content */
+    white-space: normal;
+}
+
+.post-actions {
     text-align: right;
-    font-style: italic;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
 }
 
-/* Responsive thiết kế */
-@media (max-width: 768px) {
-    .post {
-        margin-bottom: 20px;
+    .post-actions .btn {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
     }
 
-    .post-header img {
-        height: 200px;
+    .post-actions .btn-primary {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
     }
 
-    .post-title {
-        font-size: 1.6em;
+        .post-actions .btn-primary:hover {
+            background-color: #316f85;
+        }
+
+    .post-actions .btn-danger {
+        background-color: #d9534f;
     }
 
-    .post-content {
-        font-size: 1em;
-    }
+        .post-actions .btn-danger:hover {
+            background-color: #c9302c;
+        }
 
-    .post-actions {
-        flex-direction: column;
-        gap: 10px;
-    }
+#no-results {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--default-color);
 }
+
+.create-post-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+    .create-post-btn:hover {
+        background-color: #316f85;
+    }

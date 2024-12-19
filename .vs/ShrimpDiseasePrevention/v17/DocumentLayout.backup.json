@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "W:\\DA2\\ShrimpDiseasePrevention\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\weather\\forecast.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\weather\\forecast.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\access\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\access\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\weather\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\weather\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\wwwroot\\css\\profile.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\wwwroot\\css\\profile.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\post\\detailspost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\post\\detailspost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\wwwroot\\css\\post_details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\wwwroot\\css\\post_details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\wwwroot\\css\\details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\wwwroot\\css\\details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +58,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Forecast.cshtml",
-              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Weather\\Forecast.cshtml",
-              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Weather\\Forecast.cshtml",
-              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Weather\\Forecast.cshtml*",
-              "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Weather\\Forecast.cshtml*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-18T17:37:35.878Z",
+              "WhenOpened": "2024-12-19T16:27:32.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Weather\\Index.cshtml",
-              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Weather\\Index.cshtml",
-              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Weather\\Index.cshtml",
-              "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Weather\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "profile.css",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\wwwroot\\css\\profile.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-19T16:26:20.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Access\\Profile.cshtml",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Access\\Profile.cshtml",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Access\\Profile.cshtml*",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Access\\Profile.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-18T17:37:29.539Z",
+              "WhenOpened": "2024-12-19T16:26:00.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccessController.cs",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\AccessController.cs",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Controllers\\AccessController.cs",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\AccessController.cs",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Controllers\\AccessController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAAHgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:25:09.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAwwI0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:17:46.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T16:17:08.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "details.css",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\wwwroot\\css\\details.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-19T16:13:42.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "post_details.css",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-19T16:13:26.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetailsPost.cshtml",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T15:59:37.916Z",
               "EditorCaption": ""
             }
           ]

@@ -143,7 +143,7 @@ namespace ShrimpDiseasePrevention.Controllers
         {
             var post = await _context.Posts
                 .Include(p => p.Comments)
-                .ThenInclude(c => c.User)
+                .Include(p => p.User)
                 .Include(p => p.Images)
                 .FirstOrDefaultAsync(p => p.PostId == postId);
 

@@ -115,16 +115,16 @@
         let timeout;
 
         $('#search-input').on('input', function () {
-            const query = $(this).val().toLowerCase();
+            const query = $(this).val().toLowerCase().trim();
 
             clearTimeout(timeout);
 
-            timeout = setTimeout(function() {
+            timeout = setTimeout(function () {
                 let hasResults = false;
 
                 $('.news-item').each(function () {
-                    const title = $(this).data('title');
-                    const content = $(this).data('content');
+                    const title = $(this).data('title') || "";
+                    const content = $(this).data('content') || "";
 
                     if (title.includes(query) || content.includes(query)) {
                         $(this).show();
@@ -135,7 +135,7 @@
                 });
 
                 if (hasResults) {
-                    $('#no-results').addClass('d-none');
+                    $('#no-results').addClass('d-none'); 
                 } else {
                     $('#no-results').removeClass('d-none');
                 }

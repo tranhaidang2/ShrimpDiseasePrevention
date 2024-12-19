@@ -115,5 +115,10 @@ namespace ShrimpDiseasePrevention.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Login");
         }
+
+        public IActionResult Profile()
+        {
+            return View();
+        }
     }
 }

@@ -48,6 +48,8 @@ wwwroot\css\addnews.css
 wwwroot\css\details.css
 wwwroot\css\news.css
 wwwroot\css\post.css
+wwwroot\css\post_details.css
+wwwroot\css\profile.css
 wwwroot\css\section.css
 wwwroot\css\site.css
 wwwroot\DiseaseImage\11\11_backgeound.jpg
@@ -146,4 +148,5 @@ wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
 wwwroot\NewImage\18\domtrang.jpg
 wwwroot\PostImage\12\about1.jpg
+wwwroot\PostImage\14\backgeound.jpg
 wwwroot\PreventionImage\11\11_hoaitu.jpg
