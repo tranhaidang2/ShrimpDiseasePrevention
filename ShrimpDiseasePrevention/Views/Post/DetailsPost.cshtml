@@ -39,17 +39,17 @@
             {
                 <li class="comment-item">
                     <div class="comment-header">
-                        <strong class="comment-user">@comment.User.UserName</strong>
-                        <em class="comment-date">(@comment.CommentCreateAt?.ToString("dd/MM/yyyy"))</em>
+                        <strong class="comment-user">@comment?.User?.UserName</strong>
+                        <em class="comment-date">(@comment?.CommentCreateAt?.ToString("dd/MM/yyyy"))</em>
                     </div>
-                    <p class="comment-content">@comment.CommentContent</p>
+                    <p class="comment-content">@comment?.CommentContent</p>
 
                     <!-- Nút xóa bình luận -->
-                    @if (comment.UserId == Context.Session.GetInt32("UserId") || User.IsInRole("Admin"))
+                    @if (comment?.UserId == Context.Session.GetInt32("UserId") || User.IsInRole("Admin"))
                     {
                         <form method="post" action="@Url.Action("DeleteComment", "Post")" style="display:inline;">
                             @Html.AntiForgeryToken()
-                            <input type="hidden" name="commentId" value="@comment.CommentId" />
+                            <input type="hidden" name="commentId" value="@comment?.CommentId" />
                             <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
                         </form>
                     }

@@ -49,10 +49,10 @@ wwwroot\css\details.css
 wwwroot\css\news.css
 wwwroot\css\post.css
 wwwroot\css\post_details.css
-wwwroot\css\profile.css
 wwwroot\css\section.css
 wwwroot\css\site.css
 wwwroot\DiseaseImage\11\11_backgeound.jpg
+wwwroot\DiseaseImage\12\12_hoaitu.jpg
 wwwroot\favicon.ico
 wwwroot\img\about_1.jpg
 wwwroot\img\about_2.jpg
@@ -147,6 +147,9 @@ wwwroot\lib\swiper\swiper-bundle.min.css
 wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
 wwwroot\NewImage\18\domtrang.jpg
-wwwroot\PostImage\12\about1.jpg
 wwwroot\PostImage\14\backgeound.jpg
+wwwroot\PostImage\15\domden.jpg
+wwwroot\PostImage\16\hoaitu.jpg
+wwwroot\PostImage\17\about.jpg
 wwwroot\PreventionImage\11\11_hoaitu.jpg
+wwwroot\PreventionImage\12\12_about1.jpg

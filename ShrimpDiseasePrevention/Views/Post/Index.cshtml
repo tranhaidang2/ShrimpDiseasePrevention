@@ -6,7 +6,7 @@
 
     ViewData["Title"] = "Index";
 }
-<link rel="stylesheet" href="~/css/post.css" />
+<link rel="stylesheet" href="~/css/post.css" asp-append-version="true" />
 
 
 <div class="post_list container">
@@ -30,8 +30,11 @@
                     <div class="post-header d-flex justify-content-between align-content-center">
                         <div class="post-user">
                             <div class="user-info">
-                                <span class="user-name">@item.User?.UserFullName</span>
-                                <span class="post-date">@item.PostCreateAt?.ToString("dd/MM/yyyy")</span>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="user-name me-3">@item.User?.UserFullName</span>
+                                    <span class="post-date">@item.PostCreateAt?.ToString("dd/MM/yyyy")</span>
+                                </div>
+
                             </div>
                         </div>
                         @if (roleId == 1 || userFullName == @item.User?.UserFullName)
@@ -39,7 +42,9 @@
                             <div>
                                 <form method="post" action="/Post/DeletePost" class="d-inline">
                                     <input type="hidden" name="postId" value="@item.PostId" />
-                                    <button type="submit" class="btn btn-danger text-white">Xóa</button>
+                                    <div class="d-flex justify-content-center align-items-center" style="max-height: 25px;">
+                                        <button type="submit" class="btn btn-danger text-white">Xóa</button>
+                                    </div>
                                 </form>
                             </div>
                         }
