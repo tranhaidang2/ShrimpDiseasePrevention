@@ -1,19 +1,72 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Nunito:wght@200;300;400;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Nunito", sans-serif;
+    --nav-font: "Inter", sans-serif;
+}
+
+:root {
+    --background-color: #ffffff;
+    --default-color: #3d4348;
+    --heading-color: #3e5055;
+    --accent-color: #388da8;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    --new-contrast-color: #D1FAE5;
+    --new-dark-contract-font: #060606;
+    --new-background-color: #e1f5fe;
+}
+
+:root {
+    --nav-color: #313336;
+    --nav-hover-color: #77b6ca;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #313336;
+    --nav-dropdown-hover-color: #77b6ca;
+}
+
+
+.light-background {
+    --background-color: #f8fbfc;
+    --surface-color: #ffffff;
+}
+
+.dark-background {
+    --background-color: #060606;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #252525;
+    --contrast-color: #ffffff;
+    --background-color-for-section: #2d465e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
-
 }
 
+/* Post Details */
 .post-details {
     margin-top: 110px;
+    padding: 0 15px;
 }
+
 .post-title {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-family: var(--heading-font) ;
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    word-break: break-word;
 }
+
 
 .post-date {
     color: #6c757d;
@@ -28,6 +81,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Post Images */
 .post-images {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +100,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Comments */
 .comments-title, .add-comment-title {
     font-size: 1.5rem;
     margin-top: 40px;
@@ -96,6 +151,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Add Comment Form */
 .add-comment-form {
     display: flex;
     flex-direction: column;
@@ -147,3 +203,119 @@ button {
     .btn-danger:hover {
         background-color: #c82333;
     }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .post-title {
+        font-size: 2rem;
+    }
+
+    .post-images {
+        gap: 10px;
+    }
+
+    .image-wrapper {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 992px) {
+    .post-title {
+        font-size: 1.8rem;
+    }
+
+    .post-images {
+        gap: 10px;
+    }
+
+    .image-wrapper {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .comments-title, .add-comment-title {
+        font-size: 1.2rem;
+    }
+
+    .comment-item {
+        padding: 12px;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 1.6rem;
+    }
+
+    .post-images {
+        gap: 10px;
+    }
+
+    .image-wrapper {
+        flex: 1 1 100%;
+    }
+
+    .comments-title, .add-comment-title {
+        font-size: 1.1rem;
+    }
+
+    .comment-item {
+        padding: 10px;
+    }
+
+    textarea {
+        font-size: 0.85rem;
+    }
+
+    button {
+        font-size: 0.85rem;
+        padding: 8px 14px;
+    }
+
+    .btn-danger {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .post-title {
+        font-size: 1.4rem;
+    }
+
+    .post-images {
+        gap: 8px;
+    }
+
+    .image-wrapper {
+        flex: 1 1 100%;
+    }
+
+    .comments-title, .add-comment-title {
+        font-size: 1rem;
+    }
+
+    .comment-item {
+        padding: 8px;
+    }
+
+    textarea {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .btn-danger {
+        padding: 3px 6px;
+    }
+}

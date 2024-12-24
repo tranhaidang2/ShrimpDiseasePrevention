@@ -678,8 +678,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d0mufklnqi</Fingerprint>
-      <Integrity>E+ZeMCQ9opu2EjVBSwee18Hm4sExwmQuhSBjaGHZwls=</Integrity>
+      <Fingerprint>6vlibf3reb</Fingerprint>
+      <Integrity>zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post.css'))</OriginalItemSpec>
@@ -696,8 +696,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k6o0veh53h</Fingerprint>
-      <Integrity>bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ=</Integrity>
+      <Fingerprint>5upazksx1x</Fingerprint>
+      <Integrity>s4vxMy/KbCzgoVAY4JdspCUdSoAElByRaK32jXdd3U0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post_details.css'))</OriginalItemSpec>
@@ -2753,6 +2753,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PostImage\17\about.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PostImage\18\backgeound.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShrimpDiseasePrevention</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShrimpDiseasePrevention</BasePath>
+      <RelativePath>PostImage/18/backgeound.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xq5rh2y057</Fingerprint>
+      <Integrity>J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PostImage\18\backgeound.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PreventionImage\11\11_hoaitu.jpg'))">
       <SourceType>Package</SourceType>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WREfPyvcdj5M475eyApKE0jk1NdyHqKoskH7X6q2IgU=",
+  "Hash": "LDeK7Oq09H7HLSzjzYjQysOn+bQRGeUuLy0ABVb89QM=",
   "Source": "ShrimpDiseasePrevention",
   "BasePath": "_content/ShrimpDiseasePrevention",
   "Mode": "Default",
@@ -1102,8 +1102,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "d0mufklnqi",
-      "Integrity": "E+ZeMCQ9opu2EjVBSwee18Hm4sExwmQuhSBjaGHZwls=",
+      "Fingerprint": "6vlibf3reb",
+      "Integrity": "zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post.css"
@@ -1123,8 +1123,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "k6o0veh53h",
-      "Integrity": "bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ=",
+      "Fingerprint": "5upazksx1x",
+      "Integrity": "s4vxMy/KbCzgoVAY4JdspCUdSoAElByRaK32jXdd3U0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post_details.css"
@@ -3270,6 +3270,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PostImage\\17\\about.jpg"
+    },
+    {
+      "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PostImage\\18\\backgeound.jpg",
+      "SourceId": "ShrimpDiseasePrevention",
+      "SourceType": "Discovered",
+      "ContentRoot": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\",
+      "BasePath": "_content/ShrimpDiseasePrevention",
+      "RelativePath": "PostImage/18/backgeound#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xq5rh2y057",
+      "Integrity": "J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PostImage\\18\\backgeound.jpg"
     },
     {
       "Identity": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PreventionImage\\11\\11_hoaitu.jpg",
@@ -6350,6 +6371,51 @@
       ]
     },
     {
+      "Route": "css/post.6vlibf3reb.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:50:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6vlibf3reb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/post.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo="
+        }
+      ]
+    },
+    {
       "Route": "css/post.css",
       "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
       "Selectors": [],
@@ -6360,7 +6426,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3291"
+          "Value": "3533"
         },
         {
           "Name": "Content-Type",
@@ -6368,11 +6434,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E+ZeMCQ9opu2EjVBSwee18Hm4sExwmQuhSBjaGHZwls=\""
+          "Value": "\"zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:48:31 GMT"
+          "Value": "Tue, 24 Dec 2024 16:50:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6382,13 +6448,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-E+ZeMCQ9opu2EjVBSwee18Hm4sExwmQuhSBjaGHZwls="
+          "Value": "sha256-zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo="
         }
       ]
     },
     {
-      "Route": "css/post.d0mufklnqi.css",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post.css",
+      "Route": "css/post_details.5upazksx1x.css",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6397,7 +6463,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3291"
+          "Value": "5883"
         },
         {
           "Name": "Content-Type",
@@ -6405,11 +6471,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E+ZeMCQ9opu2EjVBSwee18Hm4sExwmQuhSBjaGHZwls=\""
+          "Value": "\"s4vxMy/KbCzgoVAY4JdspCUdSoAElByRaK32jXdd3U0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:48:31 GMT"
+          "Value": "Tue, 24 Dec 2024 17:11:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6419,15 +6485,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d0mufklnqi"
+          "Value": "5upazksx1x"
         },
         {
           "Name": "label",
-          "Value": "css/post.css"
+          "Value": "css/post_details.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-E+ZeMCQ9opu2EjVBSwee18Hm4sExwmQuhSBjaGHZwls="
+          "Value": "sha256-s4vxMy/KbCzgoVAY4JdspCUdSoAElByRaK32jXdd3U0="
         }
       ]
     },
@@ -6442,7 +6508,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2581"
+          "Value": "5883"
         },
         {
           "Name": "Content-Type",
@@ -6450,11 +6516,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ=\""
+          "Value": "\"s4vxMy/KbCzgoVAY4JdspCUdSoAElByRaK32jXdd3U0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 16:14:20 GMT"
+          "Value": "Tue, 24 Dec 2024 17:11:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6464,52 +6530,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/post_details.k6o0veh53h.css",
-      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\css\\post_details.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2581"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 16:14:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "k6o0veh53h"
-        },
-        {
-          "Name": "label",
-          "Value": "css/post_details.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bEGOLc2XMakcNJaj95MZfzylPLH9JaSujLJcK75MGlQ="
+          "Value": "sha256-s4vxMy/KbCzgoVAY4JdspCUdSoAElByRaK32jXdd3U0="
         }
       ]
     },
@@ -15858,6 +15879,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Uz1C9CIrrotALL0erDUq31raXZ0NYkjWVH6N5dDgsHY="
+        }
+      ]
+    },
+    {
+      "Route": "PostImage/18/backgeound.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PostImage\\18\\backgeound.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:49:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac="
+        }
+      ]
+    },
+    {
+      "Route": "PostImage/18/backgeound.xq5rh2y057.jpg",
+      "AssetFile": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\wwwroot\\PostImage\\18\\backgeound.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:49:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xq5rh2y057"
+        },
+        {
+          "Name": "label",
+          "Value": "PostImage/18/backgeound.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5Gi7AhU2JGL89lyNOvxW1ndzav6XzNCT5FPvOCdVac="
         }
       ]
     },

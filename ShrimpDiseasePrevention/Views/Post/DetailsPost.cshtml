@@ -9,8 +9,16 @@
 <div class="container post-details">
     <!-- Tiêu đề bài viết -->
     <h1 class="post-title text-center">@Model.PostTitle</h1>
-    <p class="post-date text-center"><strong>Ngày tạo:</strong> @Model.PostCreateAt?.ToString("dd/MM/yyyy")</p>
-    <p class="post-date text-center"><strong>Người đăng</strong>@Model.User?.UserFullName</p>
+    <div class="d-flex justify-content-center align-items-center article-meta mb-4">
+        <span class="me-4 text-muted">
+            <i class="bi bi-person-circle me-1"></i>
+            Tác giả: <strong>@Model.User?.UserFullName</strong>
+        </span>
+        <span class="text-muted">
+            <i class="bi bi-calendar-event me-1"></i>
+            Ngày tạo: <strong>@Model.PostCreateAt?.ToString("dd/MM/yyyy")</strong>
+        </span>
+    </div>
 
     <!-- Nội dung bài viết -->
     <div class="post-content">

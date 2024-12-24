@@ -8,17 +8,15 @@
 }
 <link rel="stylesheet" href="~/css/post.css" asp-append-version="true" />
 
-
 <div class="post_list container">
     <p>
-        <a asp-action="AddPost" class="btn btn-primary">Tạo bài viết mới</a>
+        <a asp-action="AddPost" class="btn btn-primary create-post-btn">Tạo bài viết mới</a>
     </p>
-
 
     <div class="post-container">
         @if (Model == null || !Model.Any())
         {
-            <div id="no-results" class="text-center" style="height: 70vh; display: flex; justify-content: center; align-items: center;">
+            <div id="no-results" class="text-center">
                 <p>Không có bài viết nào.</p>
             </div>
         }
@@ -34,7 +32,6 @@
                                     <span class="user-name me-3">@item.User?.UserFullName</span>
                                     <span class="post-date">@item.PostCreateAt?.ToString("dd/MM/yyyy")</span>
                                 </div>
-
                             </div>
                         </div>
                         @if (roleId == 1 || userFullName == @item.User?.UserFullName)
@@ -42,9 +39,7 @@
                             <div>
                                 <form method="post" action="/Post/DeletePost" class="d-inline">
                                     <input type="hidden" name="postId" value="@item.PostId" />
-                                    <div class="d-flex justify-content-center align-items-center" style="max-height: 25px;">
-                                        <button type="submit" class="btn btn-danger text-white">Xóa</button>
-                                    </div>
+                                    <button type="submit" class="btn btn-danger text-white">Xóa</button>
                                 </form>
                             </div>
                         }
@@ -52,16 +47,12 @@
 
                     <div class="post-body">
                         <h5 class="post-title">@item.PostTitle</h5>
-
                         <p class="post-content">@item.PostContent</p>
-
                     </div>
 
                     <div class="post-actions">
-                        <a asp-action="DetailsPost" asp-route-postId="@item.PostId" class="btn btn-primary ">Chi tiết</a>
+                        <a asp-action="DetailsPost" asp-route-postId="@item.PostId" class="btn btn-primary">Chi tiết</a>
                     </div>
-
-
                 </div>
             }
         }

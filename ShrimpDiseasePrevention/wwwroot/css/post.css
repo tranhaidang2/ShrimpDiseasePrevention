@@ -14,19 +14,21 @@
     --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-
 .post-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding-top: 20px;
+}
+
+.post_list {
+    margin-top: 70px;
 }
 
 .post {
@@ -36,7 +38,6 @@
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 
 .post-header {
     background-color: var(--accent-color);
@@ -50,10 +51,9 @@
 .user-name {
     font-weight: 600;
     font-family: var(--nav-font);
-
 }
 
-.post_list {
+.post-list {
     margin-top: 110px;
 }
 
@@ -72,6 +72,8 @@
     font-size: 1.4rem;
     color: var(--heading-color);
     margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .post-content {
@@ -80,7 +82,7 @@
     color: var(--default-color);
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 4.8em; /* Display 3 lines of content */
+    max-height: 4.8em;
     white-space: normal;
 }
 
@@ -138,3 +140,23 @@
     .create-post-btn:hover {
         background-color: #316f85;
     }
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .post-container {
+        grid-template-columns: 1fr;
+    }
+
+    .post-title {
+        font-size: 1.2rem;
+    }
+
+    .post-content {
+        font-size: 0.95rem;
+    }
+
+    .create-post-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
