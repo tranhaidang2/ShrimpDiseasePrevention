@@ -1,7 +1,7 @@
 ﻿@{
     var newsList = ViewBag.News as List<ShrimpDiseasePrevention.Models.News>;
     int? roleId = Context.Session.GetInt32("RoleId");
-
+    ViewData["Title"] = "Tin tức";
 }
 
 <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />

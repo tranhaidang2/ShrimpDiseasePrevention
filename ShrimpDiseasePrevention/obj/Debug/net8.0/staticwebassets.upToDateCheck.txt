@@ -52,7 +52,6 @@ wwwroot\css\post_details.css
 wwwroot\css\section.css
 wwwroot\css\site.css
 wwwroot\DiseaseImage\11\11_backgeound.jpg
-wwwroot\DiseaseImage\12\12_hoaitu.jpg
 wwwroot\favicon.ico
 wwwroot\img\about_1.jpg
 wwwroot\img\about_2.jpg
@@ -153,4 +152,3 @@ wwwroot\PostImage\16\hoaitu.jpg
 wwwroot\PostImage\17\about.jpg
 wwwroot\PostImage\18\backgeound.jpg
 wwwroot\PreventionImage\11\11_hoaitu.jpg
-wwwroot\PreventionImage\12\12_about1.jpg

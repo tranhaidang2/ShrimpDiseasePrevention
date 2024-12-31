@@ -5,6 +5,7 @@
     var preventionImages = ViewBag.PreventionImages as IEnumerable<ShrimpDiseasePrevention.Models.Image>;
     var userFullName = ViewBag.UserFullName as string;
     int? roleId = Context.Session.GetInt32("RoleId");
+    ViewData["Title"] = "Chi tiết dịch bệnh";
 
 }
 <link rel="stylesheet" href="/css/details.css" asp-append-version="true" />

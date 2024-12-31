@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Trang chủ</title>
+    <title>@ViewData["Title"]</title>
 
     <!-- Important -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -39,7 +39,7 @@
 
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <img src="~/img/logo.png" alt="">
-                <h1 class="sitename">QuikShrimp</h1>
+                <h1 class="sitename">Shrimp</h1>
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -58,10 +58,19 @@
                             <li><a href="#">Zalo</a></li>
                         </ul>
                     </li>
-                    @if(!string.IsNullOrEmpty(userFullName)) {
-                        <li><a asp-controller="Access" asp-action="Logout" class="text-danger">Đăng xuất</a></li>
+                    @if (!string.IsNullOrEmpty(userFullName))
+                    {
+                        <li class="dropdown">
+                            <a href="#"><span>Thêm</span> <i class="bi bi-caret-down-fill toggle-dropdown"></i></a>
+                            <ul>
 
+                                <li><a asp-controller="Access" asp-action="Logout" class="text-danger">Đăng xuất</a></li>
+
+
+                            </ul>
+                        </li>
                     }
+
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -88,8 +97,8 @@
     <footer id="footer" class="footer position-relative light-background">
         <div class="container copyright text-center">
             <p>
-                © <span>Copyright</span> <strong class="px-1 sitename">QuikShrimp</strong><span>
-                    Bản quyền thuộc công ty QuikShrimp
+                © <span>Copyright</span> <strong class="px-1 sitename">QShrimp</strong><span>
+                    Bản quyền thuộc công ty QShrimp
                 </span>
             </p>
         </div>

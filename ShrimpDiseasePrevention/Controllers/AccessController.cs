@@ -48,13 +48,15 @@ namespace ShrimpDiseasePrevention.Controllers
                     return View(_user);
                 }
 
+                bool isFirstUser = !await _context.Users.AnyAsync();
+
                 var user = new User
                 {
                     UserName = _user.UserName,
                     UserPassword = BCrypt.Net.BCrypt.HashPassword(_user.UserPassword),
                     UserFullName = _user.UserFullName,
                     UserCreateAt = DateTime.UtcNow,
-                    RoleId = 2
+                    RoleId = isFirstUser ? 1 : 2
                 };
 
                 await _context.Users.AddAsync(user);

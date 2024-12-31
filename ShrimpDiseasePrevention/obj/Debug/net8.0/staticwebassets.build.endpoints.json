@@ -85,88 +85,6 @@
       ]
     },
     {
-      "Route": "DiseaseImage/12/12_hoaitu.d03h3ki2em.jpg",
-      "AssetFile": "DiseaseImage/12/12_hoaitu.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12054"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:47:49 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d03h3ki2em"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14="
-        },
-        {
-          "Name": "label",
-          "Value": "DiseaseImage/12/12_hoaitu.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "DiseaseImage/12/12_hoaitu.jpg",
-      "AssetFile": "DiseaseImage/12/12_hoaitu.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12054"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:47:49 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14="
-        }
-      ]
-    },
-    {
       "Route": "NewImage/18/domtrang.jpg",
       "AssetFile": "NewImage/18/domtrang.jpg",
       "Selectors": [],
@@ -737,88 +655,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-fXw/UQo3kQxAR+lJccNkuf+Y+zD6viVFKmCwYG95A14="
-        }
-      ]
-    },
-    {
-      "Route": "PreventionImage/12/12_about1.bsy0g2usur.jpg",
-      "AssetFile": "PreventionImage/12/12_about1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "220785"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:47:49 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bsy0g2usur"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI="
-        },
-        {
-          "Name": "label",
-          "Value": "PreventionImage/12/12_about1.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "PreventionImage/12/12_about1.jpg",
-      "AssetFile": "PreventionImage/12/12_about1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "220785"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:47:49 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-G+jcI5l/Z3gCgI4TVV1aj9kjeMG7GeenKBjnKXzbcoI="
         }
       ]
     },
@@ -3939,7 +3775,7 @@
       ]
     },
     {
-      "Route": "css/post.6vlibf3reb.css",
+      "Route": "css/post.0c2dk2wm2r.css",
       "AssetFile": "css/post.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3961,21 +3797,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo=\""
+          "Value": "\"8FZHZwg3h5yVeT5tBabNxjd0PuKq36yVZSHTrsO58QA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 24 Dec 2024 16:50:07 GMT"
+          "Value": "Mon, 30 Dec 2024 15:33:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6vlibf3reb"
+          "Value": "0c2dk2wm2r"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo="
+          "Value": "sha256-8FZHZwg3h5yVeT5tBabNxjd0PuKq36yVZSHTrsO58QA="
         },
         {
           "Name": "label",
@@ -4006,17 +3842,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo=\""
+          "Value": "\"8FZHZwg3h5yVeT5tBabNxjd0PuKq36yVZSHTrsO58QA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 24 Dec 2024 16:50:07 GMT"
+          "Value": "Mon, 30 Dec 2024 15:33:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zknREzu+Mgfr0AVX4jQ1WYTyG85EXGm9c6HZI3mqHfo="
+          "Value": "sha256-8FZHZwg3h5yVeT5tBabNxjd0PuKq36yVZSHTrsO58QA="
         }
       ]
     },

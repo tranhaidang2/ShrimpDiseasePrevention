@@ -1,8 +1,9 @@
 ﻿@{
     var diseaseList = ViewBag.Diseases as List<ShrimpDiseasePrevention.Models.Disease>;
     int? roleId = Context.Session.GetInt32("RoleId");
-
+    ViewData["Title"] = "Tra cứu dịch bênh";
 }
+
 
 <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />
 
