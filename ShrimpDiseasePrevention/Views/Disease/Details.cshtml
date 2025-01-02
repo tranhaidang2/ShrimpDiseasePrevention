@@ -61,8 +61,13 @@
     </div>
     <div class="article-content my-5">
         <p class="text-justify">
-            @if (diseaseDetails.Preventions != null && diseaseDetails.Preventions.Any()) {
-                        @diseaseDetails.DiseaseContent
+            @diseaseDetails.DiseaseSymptoms
+        </p>
+    </div>
+    <div class="article-content my-5">
+        <p class="text-justify">
+            @if (preventionDetails?.PreventionContent != null && preventionDetails.PreventionContent.Any()) {
+                        @preventionDetails.PreventionContent
             } else { <div hidden></div> }
         </p>
     </div>

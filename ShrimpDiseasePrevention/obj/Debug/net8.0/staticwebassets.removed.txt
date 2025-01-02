@@ -1,2 +1,3 @@
-W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\DiseaseImage\12\12_hoaitu.jpg
-W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PreventionImage\12\12_about1.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\DiseaseImage\11\11_backgeound.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\NewImage\18\domtrang.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PreventionImage\11\11_hoaitu.jpg

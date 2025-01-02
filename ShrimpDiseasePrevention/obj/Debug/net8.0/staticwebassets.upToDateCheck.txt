@@ -51,7 +51,7 @@ wwwroot\css\post.css
 wwwroot\css\post_details.css
 wwwroot\css\section.css
 wwwroot\css\site.css
-wwwroot\DiseaseImage\11\11_backgeound.jpg
+wwwroot\DiseaseImage\14\14_download (7).jpg
 wwwroot\favicon.ico
 wwwroot\img\about_1.jpg
 wwwroot\img\about_2.jpg
@@ -145,10 +145,10 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\lib\swiper\swiper-bundle.min.css
 wwwroot\lib\swiper\swiper-bundle.min.js
 wwwroot\lib\swiper\swiper-bundle.min.js.map
-wwwroot\NewImage\18\domtrang.jpg
+wwwroot\NewImage\19\01-2-loai-khi-doc-ao-tom-kho-xu-ly.jpg
 wwwroot\PostImage\14\backgeound.jpg
 wwwroot\PostImage\15\domden.jpg
 wwwroot\PostImage\16\hoaitu.jpg
 wwwroot\PostImage\17\about.jpg
 wwwroot\PostImage\18\backgeound.jpg
-wwwroot\PreventionImage\11\11_hoaitu.jpg
+wwwroot\PreventionImage\14\14_download (8).jpg
