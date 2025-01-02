@@ -188,16 +188,15 @@ namespace ShrimpDiseasePrevention.Controllers
                 return NotFound();
             }
 
-            // Lấy thông tin người dùng từ session
-            var currentUserId = HttpContext.Session.GetInt32("UserId");
+            //var currentUserId = HttpContext.Session.GetInt32("UserId");
 
-            if (currentUserId == null || comment.UserId != currentUserId)
-            {
-                if (!User.IsInRole("Admin"))
-                {
-                    return Forbid();
-                }
-            }
+            //if (currentUserId == null || comment.UserId != currentUserId)
+            //{
+            //    if (!User.IsInRole("Admin"))
+            //    {
+            //        return Forbid();
+            //    }
+            //}
 
             _context.Comments.Remove(comment);
             await _context.SaveChangesAsync();

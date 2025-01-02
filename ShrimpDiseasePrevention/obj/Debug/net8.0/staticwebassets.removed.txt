@@ -1,3 +1,5 @@
-W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\DiseaseImage\11\11_backgeound.jpg
-W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\NewImage\18\domtrang.jpg
-W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PreventionImage\11\11_hoaitu.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PostImage\14\backgeound.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PostImage\15\domden.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PostImage\16\hoaitu.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PostImage\17\about.jpg
+W:\DA2\ShrimpDiseasePrevention\ShrimpDiseasePrevention\wwwroot\PostImage\18\backgeound.jpg

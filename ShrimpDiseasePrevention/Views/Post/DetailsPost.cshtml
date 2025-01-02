@@ -1,6 +1,8 @@
 ﻿@model ShrimpDiseasePrevention.Models.Post
 
 @{
+    int? roleId = Context.Session.GetInt32("RoleId");
+
     ViewData["Title"] = "Chi tiết bài viết";
 }
 
@@ -53,7 +55,7 @@
                     <p class="comment-content">@comment?.CommentContent</p>
 
                     <!-- Nút xóa bình luận -->
-                    @if (comment?.UserId == Context.Session.GetInt32("UserId") || User.IsInRole("Admin"))
+                    @if (comment?.UserId == Context.Session.GetInt32("UserId") || roleId == 1)
                     {
                         <form method="post" action="@Url.Action("DeleteComment", "Post")" style="display:inline;">
                             @Html.AntiForgeryToken()

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "W:\\DA2\\ShrimpDiseasePrevention\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\post\\detailspost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\post\\detailspost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\views\\post\\detailspost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\views\\post\\detailspost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|w:\\da2\\shrimpdiseaseprevention\\shrimpdiseaseprevention\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8BFCD2-04B9-4D14-A65C-86ECD0F3BFB2}|ShrimpDiseasePrevention\\ShrimpDiseasePrevention.csproj|solutionrelative:shrimpdiseaseprevention\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +38,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Controllers\\PostController.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAuwMYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T06:27:56.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Controllers\\CommentController.cs",
+              "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "ShrimpDiseasePrevention\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T06:27:53.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DetailsPost.cshtml",
               "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
               "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
               "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
               "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Post\\DetailsPost.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-02T04:32:07.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
               "RelativeDocumentMoniker": "ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
               "ToolTip": "W:\\DA2\\ShrimpDiseasePrevention\\ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
               "RelativeToolTip": "ShrimpDiseasePrevention\\Views\\Post\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-02T04:32:01.558Z",
               "EditorCaption": ""
